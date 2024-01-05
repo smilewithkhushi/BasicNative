@@ -1,20 +1,18 @@
 import { StyleSheet } from "react-native";
 
-export default function Calculator(){
+export default function Gallery() {
     return (
         <View style={styles.container}>
-    
-    
 
-<Text style={styles.heading}>Welcome to the Calculator page! </Text>
 
-     
-          </View>
-);    
+
+            <Text style={styles.heading}>Welcome to the Calculator page! </Text>
+
+
+        </View>
+    );
 
 }
-
-
 
 const styles = StyleSheet.create({
     container: {
@@ -70,4 +68,3 @@ const styles = StyleSheet.create({
       fontSize: 16,
     }
   });
-  

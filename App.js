@@ -12,21 +12,17 @@ export default function App() {
 
   const Stack = createNativeStackNavigator();
   return (
-    <View>
       <NavigationContainer>
 
-        <Stack.Navigator initialRouteName='home'>
-          <Stack.Screen name="Home" component={Home} options={{ headerShown: true, animation: "fade" }} />
-          <Stack.Screen name="Day 1" component={DayOne} options={{ headerShown: true, animation: "fade" }} />
-         
-          <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "fade" }} />
-          <Stack.Screen name="Image Gallery" component={Gallery} options={{ headerShown: true, animation: "fade" }} />
+        <Stack.Navigator initialRouteName='Home'>
+          <Stack.Screen name="Home" component={Home} options={{ headerShown: false, animation: "slide_from_right" ,}} />
+          <Stack.Screen name="Day1" component={DayOne} options={{ headerShown: true, animation: "slide_from_right" }} />
+          <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
+          <Stack.Screen name="Image Gallery" component={Gallery} options={{ headerShown: true, animation: "slide_from_right" }} />
 
         </Stack.Navigator>
 
       </NavigationContainer>
-
-    </View>
 
   );
 }

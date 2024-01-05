@@ -1,70 +1,74 @@
-import { StyleSheet } from "react-native";
+import React, { useState, useEffect } from 'react';
+import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
+
+const fetchImages = async () => {
+    try {
+        const response = await fetch('https://picsum.photos/v2/list');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching images:', error);
+    }
+};
 
 export default function Gallery() {
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const imagesData = await fetchImages();
+            setImages(imagesData);
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <View style={styles.container}>
 
+            <Text style={styles.heading}>Welcome to the Gallery! </Text>
 
-
-            <Text style={styles.heading}>Welcome to the Calculator page! </Text>
-
-
+            <FlatList
+                data={images}
+                renderItem={({ item }) => (
+                    <View style={styles.imageContainer}>
+                        
+                        <Image
+                            source={{ uri:item.download_url }}
+                            style={styles.image}
+                            resizeMode="cover"
+                            
+                        />
+                    </View>
+                )}
+                keyExtractor={(item, index) => index.toString()}
+                numColumns={2}
+            />
         </View>
     );
-
-}
+};
 
 const styles = StyleSheet.create({
     container: {
-      flexDirection: 'column',
-      flex: 0,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    }
-    ,
-    button: {
-      textAlign: 'center',
-      margin: 8,
-      width: 150,
-      paddingHorizontal: 20,
-      paddingVertical: 14,
-      fontSize: 16,
-      borderColor: '#ed6872',
-      color: '#fff',
-      borderRadius: 10,
-      backgroundColor: '#600047',
-      shadowColor: '#ed6872',
+        flex: 0,
+        justifyContent: 'center',
+        padding: 10,
+    },
+    imageContainer: {
+        flex: 1,
+        margin: 3,
+    },
+    image: {
+        width: '100%',
+        height: 150,
+        borderRadius: 6,
+
     },
     heading: {
-      color: '#600047',
-      fontWeight: "bold",
-      fontSize: 22,
-      padding: 8,
-      textAlign: 'center',
+        color: '#600047',
+        fontWeight: "bold",
+        fontSize: 22,
+        margin: 20,
+        textAlign: 'center',
     },
-  
-    btngrid: {
-      flex: 0,
-      flexDirection: 'row',
-      flexWrap: 'wrap',
-      alignContent: 'center',
-      justifyContent: 'space-evenly',
-      margin: 10,
-      width: 400,
-  
-    },
-  
-    list: {
-      flex: 0,
-      flexDirection: 'column',
-      width: 380,
-      paddingHorizontal: 20,
-      margin: 10,
-    },
-  
-    items: {
-      margin: 2,
-      fontSize: 16,
-    }
-  });
+});

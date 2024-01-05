@@ -1,51 +1,53 @@
-import { StyleSheet } from "react-native";
+import { Pressable, ScrollView, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import { View, Button, Alert, Text, StatusBar, Image } from "react-native";
 
 export default function Home() {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.container}>
-{/* 
+    <ScrollView >
+
+      <View style={styles.container}>
+        
       <Image
-        source={require('.../assets/nature1.jpg')}
-        style={{ width: 500, height: 280, marginBottom: 10, }}
-      /> */}
+      source={{uri: 'https://images.unsplash.com/photo-1573456170607-b885fdc78985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}}
+      style={{width: 400, height: 250, marginBottom: 10,}}
+      />
 
-      <Text style={styles.heading}>Welcome to my first React Native App :) </Text>
+        <Text style={styles.heading}>Welcome to my first React Native App :) </Text>
 
-      <StatusBar style="auto" />
+        <StatusBar style="auto" animated />
 
-      <View style={styles.btngrid}>
+        <View style={styles.btngrid}>
+          <Pressable>
+            {/* <Text style={styles.button} onPress={(() => {
+              console.log("Button to Home Screen is Pressed!")
+              navigation.navigate("Home")
+            })}>Home Screen</Text> */}
 
+            <Text style={styles.button} onPress={(() => {
+              console.log("Button to Day 1 is pressed!")
+              navigation.navigate("Day1")
+            })}>Day 1 Learnings</Text>
 
-        <Text style={styles.button} onPress={(() => {
-          console.log("Button to Home Screen is Pressed!")
-          navigation.navigate("Home")
-        })}>Home Screen</Text>
+            <Text style={styles.button} onPress={(() => {
+              console.log("Button to Day 2 learnings is Pressed!")
+            })}>Day 2 Learnings</Text>
 
-        <Text style={styles.button} onPress={(() => {
-          Alert.alert("Button to Day 1 is pressed!")
-          navigation.navigate("DayOne")
-        })}>Day 1 Learnings</Text>
+            <Text style={styles.button} onPress={(() => {
+              console.log("Button to Image Gallery is Pressed!")
+              navigation.navigate("Image Gallery")
+            })}>Image Gallery</Text>
 
-        <Text style={styles.button} onPress={(() => {
-          console.log("Button to Day 2 learnings is Pressed!")
-          navigation.navigate("")
-        })}>Day 2 Learnings</Text>
-
-        <Text style={styles.button} onPress={(() => {
-          console.log("Button to Image Gallery is Pressed!")
-          navigation.navigate("Gallery")
-        })}>Image Gallery</Text>
-
-        <Text style={styles.button} onPress={(() => {
-          console.log("Button to Calculator is Pressed!")
-          navigation.navigate("Calculator")
-        })}>Calculator</Text>
+            <Text style={styles.button} onPress={(() => {
+              console.log("Button to Calculator is Pressed!")
+              navigation.navigate("Calculator")
+            })}>Calculator</Text>
+          </Pressable>
+        </View>
       </View>
-
-    </View>
+    </ScrollView>
   );
 
 }
@@ -59,12 +61,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    height: '100%',
   }
   ,
   button: {
     textAlign: 'center',
-    margin: 8,
-    width: 150,
+    margin: 10,
+    width: 200,
     paddingHorizontal: 20,
     paddingVertical: 14,
     fontSize: 16,
@@ -75,7 +78,7 @@ const styles = StyleSheet.create({
     shadowColor: '#ed6872',
   },
   heading: {
-    color: '#600047',
+    color: '#624CAB',
     fontWeight: "bold",
     fontSize: 22,
     padding: 8,
@@ -88,8 +91,8 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     alignContent: 'center',
     justifyContent: 'space-evenly',
-    margin: 10,
-    width: 400,
+    margin: 20,
+    width: "100%",
 
   },
 });

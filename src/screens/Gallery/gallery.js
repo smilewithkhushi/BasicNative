@@ -11,6 +11,8 @@ const fetchImages = async () => {
     }
 };
 
+
+
 export default function Gallery() {
     const [images, setImages] = useState([]);
 

@@ -9,11 +9,11 @@ export default function Home() {
     <ScrollView >
 
       <View style={styles.container}>
-        
-      <Image
-      source={{uri: 'https://images.unsplash.com/photo-1573456170607-b885fdc78985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}}
-      style={{width: 400, height: 250, marginBottom: 10,}}
-      />
+
+        <Image
+          source={{ uri: 'https://images.unsplash.com/photo-1573456170607-b885fdc78985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }}
+          style={{ width: 400, height: 250, marginBottom: 10, }}
+        />
 
         <Text style={styles.heading}>Welcome to my first React Native App :) </Text>
 
@@ -34,6 +34,11 @@ export default function Home() {
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Day 2 learnings is Pressed!")
             })}>Day 2 Learnings</Text>
+
+            <Text style={styles.button} onPress={(() => {
+              console.log("Button to Rock Paper Scissors Game is Pressed!")
+              navigation.navigate("Rock Paper Scissors Game")
+            })}>Rock Paper Scissors Game</Text>
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Image Gallery is Pressed!")

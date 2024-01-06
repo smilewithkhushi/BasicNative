@@ -6,6 +6,7 @@ import Calculator from './src/screens/Calculator/calculator';
 import Home from './src/screens/Home/home';
 import Gallery from './src/screens/Gallery/gallery';
 import DayOne from './src/screens/DayOne/dayone';
+import RPSGame from './src/screens/RockPaperScissor/RPSGame';
 
 export default function App() {
 
@@ -19,6 +20,7 @@ export default function App() {
           <Stack.Screen name="Day1" component={DayOne} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Image Gallery" component={Gallery} options={{ headerShown: true, animation: "slide_from_right" }} />
+          <Stack.Screen name="Rock Paper Scissors Game" component={RPSGame} options={{ headerShown: true, animation: "slide_from_right" }} />
 
         </Stack.Navigator>
 

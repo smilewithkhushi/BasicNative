@@ -5,7 +5,7 @@ import { View, Text, Image, TouchableOpacity, StyleSheet, StatusBar } from 'reac
 export default function RPSGame() {
 
     //setting useState() for score and chances
-    const [chances, setChances] = useState(3);
+    const [chances, setChances] = useState(5);
     const [playerScore, setPlayerScore] = useState(0);
     const [computerScore, setComputerScore] = useState(0);
     const [showModal, setShowModal] = useState(false);
@@ -33,7 +33,7 @@ export default function RPSGame() {
     const onPlayAgain = () => {
         setPlayerScore(0);
         setComputerScore(0);
-        setChances(3);
+        setChances(5);
     };
 
     //store the images source for the choice variable
@@ -140,22 +140,22 @@ export default function RPSGame() {
 
             ) : (
                 <View style={styles.modalContainer}>
-                    
-                         <StatusBar style="light" />
-                         <View style={styles.modalContent}>
-                    <Image
-                        source={require('./gaming2.png')}
-                        style={{ width: 300, height: 300, marginBottom: 50, borderRadius: 20, }}
-                    ></Image>
 
-                    <Text style={styles.modalText}>
-                        {playerScore > computerScore ? 'Congratulations! You Win!' : 'Oops! You Lose!'}
-                    </Text>
-                    <TouchableOpacity onPress={onPlayAgain}>
-                        <Text style={styles.playAgain}>Play Again</Text>
-                    </TouchableOpacity>
+                    <StatusBar style="light" />
+                    <View style={styles.modalContent}>
+                        <Image
+                            source={require('./gaming2.png')}
+                            style={{ width: 300, height: 300, marginBottom: 50, borderRadius: 20, }}
+                        ></Image>
 
-                </View>
+                        <Text style={styles.modalText}>
+                            {playerScore > computerScore ? 'Congratulations! You Win!' : 'Oops! You Lose!'}
+                        </Text>
+                        <TouchableOpacity onPress={onPlayAgain}>
+                            <Text style={styles.playAgain}>Play Again</Text>
+                        </TouchableOpacity>
+
+                    </View>
                 </View>
             )}
 
@@ -183,6 +183,10 @@ const styles = StyleSheet.create({
         width: 130,
         height: 130,
         margin: 6,
+
+        shadowColor: '#0553',
+        shadowRadius: 10,
+
     },
     scoreContainer: {
         marginTop: 30,
@@ -232,12 +236,12 @@ const styles = StyleSheet.create({
         padding: 20,
         borderRadius: 10,
         alignItems: 'center',
-      },
-      modalText: {
+    },
+    modalText: {
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 20,
         color: '#600047',
-      },
+    },
 
 });

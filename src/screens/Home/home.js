@@ -32,18 +32,27 @@ export default function Home() {
             })}>Day 1 Learnings</Text>
 
             <Text style={styles.button} onPress={(() => {
-              console.log("Button to Day 2 learnings is Pressed!")
-            })}>Day 2 Learnings</Text>
+              console.log("Button to Image Gallery is Pressed!")
+              navigation.navigate("Image Gallery")
+            })}>Day 2 : Image Gallery</Text>
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Rock Paper Scissors Game is Pressed!")
               navigation.navigate("Rock Paper Scissors Game")
-            })}>Rock Paper Scissors Game</Text>
+            })}>Day 3 : Rock Paper Scissors Game</Text>
+
 
             <Text style={styles.button} onPress={(() => {
-              console.log("Button to Image Gallery is Pressed!")
-              navigation.navigate("Image Gallery")
-            })}>Image Gallery</Text>
+              console.log("Button to Book Finder is Pressed!")
+              navigation.navigate("Book Finder")
+            })}>Day 4 : Book Finder</Text>
+
+            <Text style={styles.button} onPress={(() => {
+              console.log("Button to Weather App is Pressed!")
+              navigation.navigate("Weather App")
+            })}>Weather App</Text>
+
+
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Calculator is Pressed!")
@@ -72,7 +81,7 @@ const styles = StyleSheet.create({
   button: {
     textAlign: 'center',
     margin: 10,
-    width: 200,
+    width: 230,
     paddingHorizontal: 20,
     paddingVertical: 14,
     fontSize: 16,

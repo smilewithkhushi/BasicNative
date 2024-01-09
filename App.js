@@ -8,7 +8,7 @@ import Gallery from './src/screens/Gallery/gallery';
 import DayOne from './src/screens/DayOne/dayone';
 import RPSGame from './src/screens/RockPaperScissor/RPSGame';
 import WeatherApp from './src/screens/WeatherApp/WeatherApp';
-import BookFinder from './src/screens/Book Finder/BookFinder';
+import BookFinder from './src/screens/BookFinder/BookFinder';
 
 
 export default function App() {

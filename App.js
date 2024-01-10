@@ -24,9 +24,9 @@ export default function App() {
          <Stack.Screen name="Image Gallery" component={Gallery} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Rock Paper Scissors Game" component={RPSGame} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Book Finder" component={BookFinder} options={{ headerShown: true, animation: "slide_from_right" }} />
+          <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
          
           <Stack.Screen name="Weather App" component={WeatherApp} options={{ headerShown: true, animation: "slide_from_right" }} />
-          <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
          
         </Stack.Navigator>
 

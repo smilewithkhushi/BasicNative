@@ -1,4 +1,4 @@
-<h1 align="center" id="title">BasicNative</h1>
+<h1 align="center" id="title"> 📲 BasicNative 📲</h1>
 
 <p id="description">A collection of beginner friendly projects based on React Native Expo to help beginners get started with Application Development.</p>
 
@@ -6,9 +6,16 @@
 
 <table>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <th> Counter & Buttons </th>
+    <th> Image Gallery </th>
+    <th> Rock Paper Scissors Game</th>
+    <th> Book Finder</th>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/BasicScreen_Preview.png" width=250> </td>
+    <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/Gallery_Preview.png" width=250> </td>
+    <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/rockPaperScissors_Preview.png" width=250></td>
+    <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/BookFinder_Preview.png" width=250> </td>
   </tr>
 </table>
 

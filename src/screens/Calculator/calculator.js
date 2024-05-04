@@ -68,7 +68,7 @@ export default function Calculator() {
           <TouchableOpacity onPress={handleClear} style={styles.button}>
             <Text>AC</Text>
           </TouchableOpacity>
-          
+
           <TouchableOpacity style={styles.button}>
             <Text>+/-</Text>
           </TouchableOpacity>

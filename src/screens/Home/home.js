@@ -15,7 +15,7 @@ export default function Home() {
           style={{ width: 400, height: 250, marginBottom: 10, }}
         />
 
-        <Text style={styles.heading}>Welcome to my first React Native App :) </Text>
+        <Text style={styles.heading}>Welcome to the hub of React Native Applications : )</Text>
 
         <StatusBar style="auto" animated />
 
@@ -28,31 +28,24 @@ export default function Home() {
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Day 1 is pressed!")
-              navigation.navigate("Day1")
-            })}>Day 1 Learnings</Text>
+              navigation.navigate("Basic Components")
+            })}>Basic Components</Text>
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Image Gallery is Pressed!")
               navigation.navigate("Image Gallery")
-            })}>Day 2 : Image Gallery</Text>
+            })}> Image Gallery</Text>
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Rock Paper Scissors Game is Pressed!")
               navigation.navigate("Rock Paper Scissors Game")
-            })}>Day 3 : Rock Paper Scissors Game</Text>
+            })}> Rock Paper Scissors Game</Text>
 
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Book Finder is Pressed!")
               navigation.navigate("Book Finder")
-            })}>Day 4 : Book Finder</Text>
-
-            <Text style={styles.button} onPress={(() => {
-              console.log("Button to Weather App is Pressed!")
-              navigation.navigate("Weather App")
-            })}>Weather App</Text>
-
-
+            })}> Book Finder</Text>
 
             <Text style={styles.button} onPress={(() => {
               console.log("Button to Calculator is Pressed!")

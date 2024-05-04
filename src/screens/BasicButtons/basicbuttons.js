@@ -1,7 +1,7 @@
 import { StyleSheet, View, Text, StatusBar, TouchableHighlight, TouchableOpacity, Image, Pressable, Button, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
-
+import { Alert } from "react-native";
 export default function DayOne() {
     const [count, setCount] = useState(0);
     const navigation = useNavigation();
@@ -15,15 +15,12 @@ export default function DayOne() {
                     style={{ width: 400, height: 250, marginBottom: 10, }}
                 />
 
-                <Text style={styles.heading}>Hi, Welcome to Day 1 Learnings! </Text>
+                <Text style={styles.heading}>Basic Components, Text and Buttons </Text>
 
                 <StatusBar style="auto" />
 
                 <View style={styles.list}>
 
-                    <TouchableHighlight>
-                        <Text style={styles.items}>Displaying Touchable Highlight</Text>
-                    </TouchableHighlight>
 
                     <Pressable>
                         <Text style={styles.items}>Pressable Text</Text>
@@ -37,7 +34,7 @@ export default function DayOne() {
 
                 <View style={styles.btngrid}>
                     <Text style={styles.button} title="Alert Button" onPress={(() => {
-                        Alert.alert("Alert Buttosn is pressed!")
+                        Alert.alert("Alert Button is pressed!")
 
                     })}>Alert Button</Text>
 
@@ -45,11 +42,6 @@ export default function DayOne() {
                         console.log("Button to Home Screen is Pressed!")
                         navigation.navigate("Home")
                     })}>Home Screen</Text>
-
-                    <Text style={styles.button} title="Calculator" onPress={(() => {
-                        console.log("Button to Calculator Screen is Pressed!")
-                        navigation.navigate("Calculator")
-                    })}>Calculator</Text>
                 </View>
 
                 <Text style={{ padding: 4, marginTop: 16, fontSize: 20, color: '#E2294F', fontWeight: "bold", }}> Press the buttons to change the count! </Text>

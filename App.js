@@ -5,9 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Calculator from './src/screens/Calculator/calculator';
 import Home from './src/screens/Home/home';
 import Gallery from './src/screens/Gallery/gallery';
-import DayOne from './src/screens/DayOne/dayone';
+import BasicButtons from './src/screens/BasicButtons/basicbuttons';
 import RPSGame from './src/screens/RockPaperScissor/RPSGame';
-import WeatherApp from './src/screens/WeatherApp/WeatherApp';
 import BookFinder from './src/screens/BookFinder/BookFinder';
 
 
@@ -20,13 +19,11 @@ export default function App() {
 
         <Stack.Navigator initialRouteName='Home'>
           <Stack.Screen name="Home" component={Home} options={{ headerShown: false, animation: "slide_from_right" ,}} />
-          <Stack.Screen name="Day1" component={DayOne} options={{ headerShown: true, animation: "slide_from_right" }} />
+          <Stack.Screen name="Basic Components" component={BasicButtons} options={{ headerShown: true, animation: "slide_from_right" }} />
          <Stack.Screen name="Image Gallery" component={Gallery} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Rock Paper Scissors Game" component={RPSGame} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Book Finder" component={BookFinder} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
-         
-          <Stack.Screen name="Weather App" component={WeatherApp} options={{ headerShown: true, animation: "slide_from_right" }} />
          
         </Stack.Navigator>
 

@@ -51,6 +51,11 @@ export default function Home() {
               console.log("Button to Calculator is Pressed!")
               navigation.navigate("Calculator")
             })}>Calculator</Text>
+
+<Text style={styles.button} onPress={(() => {
+              console.log("Button to Movie Finder is Pressed!")
+              navigation.navigate("Movie Finder")
+            })}>Movie Finder</Text>
           </Pressable>
         </View>
       </View>

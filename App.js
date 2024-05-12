@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Alert, Image, TouchableOpacity, TouchableHighlight, Touchable, Pressable } from 'react-native';
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, DarkTheme, DefaultTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Calculator from './src/screens/Calculator/calculator';
 import Home from './src/screens/Home/home';
@@ -9,13 +9,33 @@ import BasicButtons from './src/screens/BasicButtons/basicbuttons';
 import RPSGame from './src/screens/RockPaperScissor/RPSGame';
 import BookFinder from './src/screens/BookFinder/BookFinder';
 
+import { EventRegister } from 'react-native-event-listeners'
+import React, {useEffect, useState} from 'react';
+
+import theme from './src/Themes/Colors';
+import themeContext from './src/Themes/ThemeProvider';
 
 export default function App() {
 
 
   const Stack = createNativeStackNavigator();
+
+  const [darkMode, setDarkMode]=useState(false);
+
+  useEffect(()=>{
+    const listener=EventRegister.addEventListener('ChangeTheme', (data)=>{
+      setDarkMode(data)
+    })
+    return ()=>{
+      EventRegister.removeAllListeners(listener)
+    }
+  }, [darkMode]);
+
   return (
-      <NavigationContainer>
+    <themeContext.Provider value={darkMode === true ? theme.dark : theme.light}>
+      <NavigationContainer theme={darkMode===true ? DarkTheme : DefaultTheme}>
+
+        {/* <Provider store={store}> */}
 
         <Stack.Navigator initialRouteName='Home'>
           <Stack.Screen name="Home" component={Home} options={{ headerShown: false, animation: "slide_from_right" ,}} />
@@ -27,7 +47,11 @@ export default function App() {
          
         </Stack.Navigator>
 
+        {/* </Provider> */}
+
       </NavigationContainer>
+
+      </themeContext.Provider>
 
   );
 }

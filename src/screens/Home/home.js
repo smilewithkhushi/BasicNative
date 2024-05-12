@@ -1,6 +1,6 @@
-import { Pressable, ScrollView, StyleSheet } from "react-native";
+import { Pressable, ScrollView, StyleSheet} from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { View, Button, Alert, Text, StatusBar, Image } from "react-native";
+import { View, Button, Alert, Text, StatusBar, Image , TouchableOpacity} from "react-native";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -51,6 +51,14 @@ export default function Home() {
               console.log("Button to Calculator is Pressed!")
               navigation.navigate("Calculator")
             })}>Calculator</Text>
+
+            <TouchableOpacity 
+            onPress={(() => {
+              console.log("Button to Weather is Pressed!")
+              navigation.navigate("Weather")
+            })}>
+            <Text style={styles.button} >Weather</Text>
+            </TouchableOpacity>
           </Pressable>
         </View>
       </View>

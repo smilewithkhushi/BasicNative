@@ -8,6 +8,7 @@ import Gallery from './src/screens/Gallery/gallery';
 import BasicButtons from './src/screens/BasicButtons/basicbuttons';
 import RPSGame from './src/screens/RockPaperScissor/RPSGame';
 import BookFinder from './src/screens/BookFinder/BookFinder';
+import WeatherApp from './src/screens/WeatherApp/WeatherApp';
 
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
           <Stack.Screen name="Rock Paper Scissors Game" component={RPSGame} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Book Finder" component={BookFinder} options={{ headerShown: true, animation: "slide_from_right" }} />
           <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
-         
+          <Stack.Screen name="Weather" component={WeatherApp} options={{ headerShown: false, animation: "slide_from_right" }} />
         </Stack.Navigator>
 
       </NavigationContainer>

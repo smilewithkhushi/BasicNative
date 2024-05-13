@@ -69,6 +69,11 @@ code .
 ```
 touch .env
 ```
+<p>5. Install the packages and dependencies</p>
+
+```
+npm install
+```
 
 <p>5. Start the Native Expo Project</p>
 

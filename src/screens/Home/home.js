@@ -80,6 +80,16 @@ export default function Home() {
             >
               Calculator
             </Text>
+
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to To Do List is Pressed!");
+                navigation.navigate("To Do List");
+              }}
+            >
+              To Do List
+            </Text>
           </Pressable>
         </View>
       </View>
@@ -89,38 +99,25 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexDirection: "column",
+    flex: 0,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 20,
-    background: "rgb(2,0,36)",
-    background:
-      "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,7,20,1) 4%, rgba(27,57,144,0.9809173669467787) 35%, rgba(0,212,255,1) 100%)",
+    height: "100%",
   },
   button: {
-    marginVertical: 10,
+    textAlign: "center",
+    margin: 10,
+    width: 230,
     paddingHorizontal: 20,
     paddingVertical: 14,
-    borderRadius: 10,
-    width: 230,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-    backgroundColor: "#9989D1",
-  },
-  buttonText: {
     fontSize: 16,
+    borderColor: "#ed6872",
     color: "#fff",
-    textAlign: "center",
-  },
-  gradient: {
     borderRadius: 10,
+    backgroundColor: "#600047",
+    shadowColor: "#ed6872",
   },
   heading: {
     color: "#624CAB",
@@ -129,10 +126,14 @@ const styles = StyleSheet.create({
     padding: 8,
     textAlign: "center",
   },
+
   btngrid: {
+    flex: 0,
     flexDirection: "row",
     flexWrap: "wrap",
+    alignContent: "center",
     justifyContent: "space-evenly",
-    marginTop: 20,
+    margin: 20,
+    width: "100%",
   },
 });

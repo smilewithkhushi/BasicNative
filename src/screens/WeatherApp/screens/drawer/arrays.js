@@ -1,15 +1,6 @@
 import { Icons } from "../../components/Icons";
-import DrawerScreen from "../DrawerScreen";
-import { colors } from "./constant";
 
-// export const DrawerMenu = [
-//   { route: 'Home', label: 'Home', type: Icons.Feather, icon: 'home', component: DrawerScreen, color: colors.icon1, },
-//   { route: 'Inbox', label: 'My Inbox', type: Icons.Feather, icon: 'inbox', component: DrawerScreen, color: colors.icon2, },
-//   { route: 'Calendar', label: 'My Calendar', type: Icons.Feather, icon: 'calendar', component: DrawerScreen, color: colors.icon3, },
-//   { route: 'Documents', label: 'My Documents', type: Icons.Feather, icon: 'layers', component: DrawerScreen, color: colors.icon4, },
-//   { route: 'Activity', label: 'My Activity', type: Icons.Feather, icon: 'pie-chart', component: DrawerScreen, color: colors.primary, },
-//   { route: 'Settings', label: 'Settings', type: Icons.Feather, icon: 'settings', component: DrawerScreen, color: colors.important, },
-// ];
+import { colors } from "./constant";
 
 
 export const icons = {
@@ -27,21 +18,21 @@ export const icons = {
 }
 
 export const hours = [
-  { hour: '10 AM', icon: icons.cloudSun, temp: 18 },
-  { hour: '11 AM', icon: icons.sun, temp: 21 },
-  { hour: '12 PM', icon: icons.cloudSunRain, temp: 16 },
-  { hour: '01 PM', icon: icons.cloudSunRain, temp: 19 },
-  { hour: '02 PM', icon: icons.cloudSun, temp: 21 },
-  { hour: '03 PM', icon: icons.sun, temp: 24 },
-  { hour: '04 PM', icon: icons.cloudSun, temp: 19 },
-  { hour: '05 PM', icon: icons.cloudSun, temp: 22 },
-  { hour: '06 PM', icon: icons.cloud, temp: 20 },
-  { hour: '07 PM', icon: icons.cloud, temp: 17 },
-  { hour: '08 PM', icon: icons.cloudMoon, temp: 15 },
-  { hour: '09 PM', icon: icons.cloudMoonRain, temp: 14 },
-  { hour: '10 PM', icon: icons.cloudMoonRain, temp: 14 },
-  { hour: '11 PM', icon: icons.cloudMoon, temp: 10 },
-  { hour: '12 AM', icon: icons.cloudMoon, temp: 8 },
+  { hour: '10 AM' },
+  { hour: '11 AM' },
+  { hour: '12 PM' },
+  { hour: '01 PM' },
+  { hour: '02 PM' },
+  { hour: '03 PM' },
+  { hour: '04 PM' },
+  { hour: '05 PM' },
+  { hour: '06 PM' },
+  { hour: '07 PM' },
+  { hour: '08 PM' },
+  { hour: '09 PM' },
+  { hour: '10 PM' },
+  { hour: '11 PM' },
+  { hour: '12 AM' },
 ];
 
 export const days = [

@@ -64,10 +64,10 @@ cd BasicNative
 code .
 ```
 
-<p>4. Start the deployment server</p>
+<p>4. Create .env file in root director</p>
 
 ```
-npx expo
+touch .env
 ```
 
 <p>5. Start the Native Expo Project</p>

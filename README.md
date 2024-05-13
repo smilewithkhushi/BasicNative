@@ -64,7 +64,7 @@ cd BasicNative
 code .
 ```
 
-<p>4. Create .env file in root director</p>
+<p>4. Create .env file in root directory add EXPO_PUBLIC_API_KEY={YOUR API KEY}</p>
 
 ```
 touch .env

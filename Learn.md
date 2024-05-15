@@ -72,24 +72,24 @@ Understanding the project structure will help you navigate and contribute more e
 
 ```
 BasicNative/
-├── assets/                 # Image, font, and other static resources
-├──output
-contains output screens     #images
-├── src/                    # Reusable components  
-  ├── images
-  ├── screens/              # Screen component for different app views
-   |── BasicButtons
-   |── BookFinder
-   |── Calculator
-   |── Gallery
-   |── Home             
-   |── RockPaperScissor
-   |── ToDoList
-├── App.js                  # Main entry point of the application
-├── app.json                # Configuration file for Expo
-├── package.json            # Project metadata and dependencies
-├── Learn.md                # Contains initial steps for getting started
-└── README.md               # Project overview and setup instructions
+├── assets/                         # Image, font, and other static resources        
+├── output/                         # output screens after all changes
+├── src/                   
+├── images/
+├── screens/                        # Screen components for different app views
+│   ├── BasicButtons/
+│   ├── BookFinder/
+│   ├── Calculator/
+│   ├── Gallery/
+│   ├── Home/
+│   ├── RockPaperScissor/
+│   └── ToDoList/
+├── App.js                         # Main entry point of the application
+├── app.json                       # Configuration file for Expo
+├── package.json                   # Project metadata and dependencies
+├── Learn.md                       # More about React Native
+└── README.md                      # Project overview and setup instructions        
+
 ```
 
 ## Contributing

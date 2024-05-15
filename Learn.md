@@ -70,6 +70,7 @@ React Native has become a popular choice for building high-performance, cross-pl
 ## Project Structure
 Understanding the project structure will help you navigate and contribute more effectively. Here is a brief overview:
 
+```
 BasicNative/
 ├── assets/                 # Image, font, and other static resources
 ├──output
@@ -89,7 +90,7 @@ contains output screens     #images
 ├── package.json            # Project metadata and dependencies
 ├── Learn.md                # Contains initial steps for getting started
 └── README.md               # Project overview and setup instructions
-
+```
 
 ## Contributing
 We welcome contributions from all developers, especially beginners who are looking to learn and improve their skills. Here are some ways you can contribute to the BasicNative project:

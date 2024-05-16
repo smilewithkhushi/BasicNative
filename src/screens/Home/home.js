@@ -101,37 +101,38 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "column",
     flex: 0,
-    backgroundColor: "#e7e4f9",
+    backgroundColor: "white",
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
     fontSize: 25,
   },
   button: {
+    color: "#243531",
     textAlign: "center",
     margin: 10,
     width: 230,
     paddingHorizontal: 20,
     paddingVertical: 14,
-    fontSize: 16,
-    borderColor: "#BBDED6", // Border color
-    borderWidth: 2, // Border width
-    color: "black",
+    fontSize: 15, // Font size
     borderRadius: 10,
     backgroundColor: "#61C0BF",
-    shadowColor: "#BBDED6", // Shadow color
-    shadowOffset: { width: 0, height: 2 }, // Shadow offset
-    shadowOpacity: 0.25, // Shadow opacity
-    shadowRadius: 4, // Shadow radius
-    fontSize: 15, // Font size
+    // Shadow properties
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5, // For Android
   },
   heading: {
-    color: "black",
+    color: "#243531",
     fontWeight: "bold",
     fontSize: 22,
     padding: 8,
     textAlign: "center",
-    fontFamily: "custom-font",
   },
 
   btngrid: {

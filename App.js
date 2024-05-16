@@ -22,6 +22,8 @@ import BookFinder from "./src/screens/BookFinder/BookFinder";
 import ToDoList from "./src/screens/ToDoList/toDoList";
 import AddTaskScreen from "./src/screens/ToDoList/addTask";
 import QRScanner from "./src/screens/QRScanner/qrScanner";
+import MovieFinder from './src/screens/MovieFinder/MovieFinder';
+import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -57,6 +59,18 @@ export default function App() {
           name="Calculator"
           component={Calculator}
           options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+
+        <Stack.Screen
+        name="Movie Finder"
+        component={MovieFinder}
+        options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+
+<Stack.Screen
+        name="Hex Color"
+        component={HexColorGeneratorScreen}
+        options={{ headerShown: true, animation: "slide_from_right" }}
         />
         <Stack.Screen
           name="To Do List"

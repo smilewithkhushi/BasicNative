@@ -1,5 +1,16 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button, Alert, Image, TouchableOpacity, TouchableHighlight, Touchable, Pressable } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  Alert,
+  Image,
+  TouchableOpacity,
+  TouchableHighlight,
+  Touchable,
+  Pressable,
+} from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Calculator from "./src/screens/Calculator/calculator";

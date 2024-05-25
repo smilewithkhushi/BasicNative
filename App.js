@@ -24,6 +24,7 @@ import AddTaskScreen from "./src/screens/ToDoList/addTask";
 import QRScanner from "./src/screens/QRScanner/qrScanner";
 import MovieFinder from './src/screens/MovieFinder/MovieFinder';
 import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
+import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -87,6 +88,12 @@ export default function App() {
         <Stack.Screen
           name="QR Scanner"
           component={QRScanner}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+
+        <Stack.Screen
+          name="QR Generator"
+          component={QRCodeGenerator}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
       </Stack.Navigator>

@@ -50,6 +50,7 @@ export default function App() {
         {/* </Provider> */}
 
       </NavigationContainer>
+      
 
       </themeContext.Provider>
 

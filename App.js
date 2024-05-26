@@ -17,8 +17,6 @@ import theme from './src/Themes/Colors';
 import themeContext from './src/Themes/ThemeProvider';
 
 export default function App() {
-
-
   const Stack = createNativeStackNavigator();
 
   const [darkMode, setDarkMode]=useState(false);
@@ -38,15 +36,11 @@ export default function App() {
 
         {/* <Provider store={store}> */}
 
-        <Stack.Navigator initialRouteName='Home'>
-          <Stack.Screen name="Home" component={Home} options={{ headerShown: false, animation: "slide_from_right" ,}} />
-          <Stack.Screen name="Basic Components" component={BasicButtons} options={{ headerShown: true, animation: "slide_from_right" }} />
-         <Stack.Screen name="Image Gallery" component={Gallery} options={{ headerShown: true, animation: "slide_from_right" }} />
-          <Stack.Screen name="Rock Paper Scissors Game" component={RPSGame} options={{ headerShown: true, animation: "slide_from_right" }} />
-          <Stack.Screen name="Book Finder" component={BookFinder} options={{ headerShown: true, animation: "slide_from_right" }} />
-          <Stack.Screen name="Calculator" component={Calculator} options={{ headerShown: true, animation: "slide_from_right" }} />
-         
-        </Stack.Navigator>
+        <Stack.Screen
+        name="Movie Finder"
+        component={MovieFinder}
+        options={{ headerShown: true, animation: "slide_from_right" }}
+        />
 
         {/* </Provider> */}
 

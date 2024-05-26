@@ -25,7 +25,7 @@ import QRScanner from "./src/screens/QRScanner/qrScanner";
 import MovieFinder from './src/screens/MovieFinder/MovieFinder';
 import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
 import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
-
+import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -95,6 +95,11 @@ export default function App() {
           name="QR Generator"
           component={QRCodeGenerator}
           options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        <Stack.Screen
+          name="Recipe Finder"
+          component={RecipeFinder}
+          options={{headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

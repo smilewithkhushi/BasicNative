@@ -126,6 +126,15 @@ export default function Home() {
             >
               QR Generator
             </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to To Do List is Pressed!");
+                navigation.navigate("Recipe Finder");
+              }}
+            >
+              Recipe Finder
+            </Text>
           </Pressable>
         </View>
       </View>

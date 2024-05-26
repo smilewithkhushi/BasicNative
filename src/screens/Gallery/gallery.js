@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { View, Text, FlatList, StyleSheet, Image } from 'react-native';
+import { EventRegister } from 'react-native-event-listeners'
+import themeContext from "../../Themes/ThemeProvider";
 
 const fetchImages = async () => {
     try {
@@ -15,7 +17,8 @@ const fetchImages = async () => {
 
 export default function Gallery() {
     const [images, setImages] = useState([]);
-
+    const theme = useContext(themeContext);
+    const [darkMode, setDarkMode]=useState(false);
     useEffect(() => {
         const fetchData = async () => {
             const imagesData = await fetchImages();
@@ -28,7 +31,7 @@ export default function Gallery() {
     return (
         <View style={styles.container}>
 
-            <Text style={styles.heading}>Welcome to the Gallery! </Text>
+            <Text style={[styles.heading, {color:theme.color}]}>Welcome to the Gallery! </Text>
 
             <FlatList
                 data={images}
@@ -46,6 +49,7 @@ export default function Gallery() {
                 keyExtractor={(item, index) => index.toString()}
                 numColumns={2}
             />
+            
         </View>
     );
 };

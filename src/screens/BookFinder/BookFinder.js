@@ -1,7 +1,9 @@
 import React from 'react'
 import { Pressable, StyleSheet } from 'react-native';
 import { View, Text, Image, TextInput, ScrollView, FlatList, TouchableOpacity, Modal, Button } from 'react-native';
-import { useState, useEffect } from 'react';
+import { useState, useEffect , useContext} from 'react';
+
+import themeContext from "../../Themes/ThemeProvider";
 
 
 export default function BookFinder() {
@@ -12,6 +14,7 @@ export default function BookFinder() {
     const [searchQuery, setSearchQuery] = useState('');
     const [searchError, setSearchError] = useState(false);
 
+    const theme = useContext(themeContext);
 
     useEffect(() => {
         fetchBooks();
@@ -101,7 +104,6 @@ export default function BookFinder() {
                     alignItems: 'center',
                     alignContent: 'center',
                     padding: 10,
-                    backgroundColor: '#fcf1f0'
                 }
             }>
 
@@ -118,6 +120,7 @@ export default function BookFinder() {
                 }>
                     Discover Books, Dive into Stories
                 </Text>
+                
 
                 <View style={styles.imagecontainer}>
                     <ScrollView horizontal bounces>
@@ -133,13 +136,14 @@ export default function BookFinder() {
                     letterSpacing: 2,
                     marginHorizontal: 25,
                     marginVertical: 10,
-                    fontWeight: '500'
+                    fontWeight: '500',
+                    color:theme.color
                 }}>
                     Search and explore your favourite books in one place.
                 </Text>
 
                 <TextInput
-                    style={{ height: 40, borderColor: 'gray', borderWidth: 1, paddingHorizontal: 10, width: 300, borderRadius: 8, marginVertical: 10, }}
+                    style={{ height: 40, borderColor: 'gray', borderWidth: 1, paddingHorizontal: 10, width: 300, borderRadius: 8, marginVertical: 10, color:theme.color}}
                     placeholder="Enter the type of book you want to read"
                     value={searchQuery}
                     onChangeText={(text) => setSearchQuery(text)}
@@ -152,7 +156,7 @@ export default function BookFinder() {
                     })}>Search</Text></Pressable>
 
                 {searchError && <Text style={
-                    { marginVertical: 20, fontStyle: 'italic', fontWeight: '500', }
+                    { marginVertical: 20, fontStyle: 'italic', fontWeight: '500', color:theme.color}
                 }>
                     No Books Found! Try modifying your search
                 </Text>}
@@ -270,7 +274,6 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'column',
         flex: 0,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         height: '100%',
@@ -317,7 +320,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 40,
-        backgroundColor: '#FFE4E1',
     },
     image: {
         width: 320,

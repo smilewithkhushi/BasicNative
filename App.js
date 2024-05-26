@@ -11,6 +11,7 @@ import { EventRegister } from 'react-native-event-listeners'
 import React, {useEffect, useState} from 'react';
 
 
+
 // for applying dark theme
 import theme from './src/Themes/Colors';
 import themeContext from './src/Themes/ThemeProvider';

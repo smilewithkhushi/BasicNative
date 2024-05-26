@@ -21,8 +21,10 @@ import RPSGame from "./src/screens/RockPaperScissor/RPSGame";
 import BookFinder from "./src/screens/BookFinder/BookFinder";
 import ToDoList from "./src/screens/ToDoList/toDoList";
 import AddTaskScreen from "./src/screens/ToDoList/addTask";
-import MovieFinder from './src/screens/MovieFinder/MovieFinder'
+import QRScanner from "./src/screens/QRScanner/qrScanner";
+import MovieFinder from './src/screens/MovieFinder/MovieFinder';
 import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
+import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -80,6 +82,18 @@ export default function App() {
         <Stack.Screen
           name="Add Task"
           component={AddTaskScreen}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+
+        <Stack.Screen
+          name="QR Scanner"
+          component={QRScanner}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+
+        <Stack.Screen
+          name="QR Generator"
+          component={QRCodeGenerator}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
       </Stack.Navigator>

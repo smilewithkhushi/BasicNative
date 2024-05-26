@@ -107,6 +107,25 @@ export default function Home() {
               To Do List
             </Text>
 
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to To Do List is Pressed!");
+                navigation.navigate("QR Scanner");
+              }}
+            >
+              QR Scanner
+            </Text>
+
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to To Do List is Pressed!");
+                navigation.navigate("QR Generator");
+              }}
+            >
+              QR Generator
+            </Text>
           </Pressable>
         </View>
       </View>

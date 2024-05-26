@@ -10,7 +10,7 @@ export default function Home() {
       <View style={styles.container}>
         <Image
           source={{
-            uri: "https://images.unsplash.com/photo-1573456170607-b885fdc78985?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            uri: "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           }}
           style={{ width: 400, height: 250, marginBottom: 10 }}
         />
@@ -137,26 +137,34 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "column",
     flex: 0,
-    backgroundColor: "#fff",
+    backgroundColor: "white",
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
+    fontSize: 25,
   },
   button: {
+    color: "#243531",
     textAlign: "center",
     margin: 10,
     width: 230,
     paddingHorizontal: 20,
     paddingVertical: 14,
-    fontSize: 16,
-    borderColor: "#ed6872",
-    color: "#fff",
+    fontSize: 15, // Font size
     borderRadius: 10,
-    backgroundColor: "#600047",
-    shadowColor: "#ed6872",
+    backgroundColor: "#61C0BF",
+    // Shadow properties
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5, // For Android
   },
   heading: {
-    color: "#624CAB",
+    color: "#243531",
     fontWeight: "bold",
     fontSize: 22,
     padding: 8,

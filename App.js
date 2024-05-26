@@ -1,5 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, Alert, Image, TouchableOpacity, TouchableHighlight, Touchable, Pressable } from 'react-native';
 import { NavigationContainer, DarkTheme, DefaultTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Calculator from './src/screens/Calculator/calculator';
@@ -12,6 +10,8 @@ import BookFinder from './src/screens/BookFinder/BookFinder';
 import { EventRegister } from 'react-native-event-listeners'
 import React, {useEffect, useState} from 'react';
 
+
+// for applying dark theme
 import theme from './src/Themes/Colors';
 import themeContext from './src/Themes/ThemeProvider';
 

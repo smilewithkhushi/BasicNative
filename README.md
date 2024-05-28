@@ -6,16 +6,28 @@
 
 <table>
   <tr>
-    <th> Counter & Buttons </th>
-    <th> Image Gallery </th>
-    <th> Rock Paper Scissors Game</th>
-    <th> Book Finder</th>
+    <th>Basic Components</th>
+    <th>Image Gallery</th>
+    <th>Rock Paper Scissors Game</th>
+    <th>Book Finder</th>
+    <th>Calculator</th>
+    <th>Movie Finder</th>
+    <th>Color Generator</th>
+    <th>To Do List</th>
+    <th>QR Scanner</th>
+    <th>QR Generator</th>
   </tr>
   <tr>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/BasicScreen_Preview.png" width=250> </td>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/Gallery_Preview.png" width=250> </td>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/rockPaperScissors_Preview.png" width=250></td>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/BookFinder_Preview.png" width=250> </td>
+    <td><img src="./output/calculator.jpg" width=250></td>
+    <td><img src="./output/movie_finder.jpg" width=250></td>
+    <td><img src="./output/color_generator.jpg" width=250></td>
+    <td><img src="./output/to_do_list.jpg" width=250></td>
+    <td><img src="./output/qr_scanner.jpg" width=250></td>
+    <td><img src="./output/qr_generator.jpg" width=250></td>
   </tr>
 </table>
 
@@ -64,16 +76,44 @@ cd BasicNative
 code .
 ```
 
-<p>4. Start the deployment server</p>
+<p>4. Install required packages</p>
+
+```
+npm install 
+```
+
+<p>5. Start the deployment server</p>
 
 ```
 npx expo
 ```
 
-<p>5. Start the Native Expo Project</p>
+<p>6. Start the Native Expo Project</p>
 
 ```
 npx expo start
+```
+
+<hr>
+
+<h2>🛠️ Fixing: 🛠️</h2>
+
+<p>There are a few points that needs to be taken care of when working with React Native.It might be possible that the app might not produce the required results due to version discrepencies. During such issues the following options can be utilised: </p>
+<p>1. Try to downgrade or upgrade the 'Expo Go' app when there is version incompatibility.</p>
+<p>2. In case of node_modules incompatibility the following command comes into roleplay.</p>
+
+```
+npx expo install --fix
+```
+<p>3. If there is an issue to use commands containing 'expo' then, the following command would help in fixing the issue.</p>
+
+```
+npm install -g react-native-cli
+```
+<p>4. If there is an error while using the QR Scanner or QR Generator try to use the below given commands.</p>
+
+```
+npm install react-native-qrcode-svg
 ```
 
 <hr>

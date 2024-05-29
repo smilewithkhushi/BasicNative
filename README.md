@@ -10,22 +10,31 @@
     <th>Image Gallery</th>
     <th>Rock Paper Scissors Game</th>
     <th>Book Finder</th>
-    <th>Calculator</th>
-    <th>Movie Finder</th>
-    <th>Color Generator</th>
-    <th>To Do List</th>
-    <th>QR Scanner</th>
-    <th>QR Generator</th>
+   
   </tr>
   <tr>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/BasicScreen_Preview.png" width=250> </td>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/Gallery_Preview.png" width=250> </td>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/rockPaperScissors_Preview.png" width=250></td>
     <td> <img src="https://github.com/smilewithkhushi/BasicNative/blob/master/output/BookFinder_Preview.png" width=250> </td>
-    <td><img src="./output/calculator.jpg" width=250></td>
+  </tr>
+  <tr>
+ <th>Calculator</th>
+    <th>Movie Finder</th>
+    <th>Color Generator</th>
+    <th>To Do List</th>
+  </tr>
+
+<td><img src="./output/calculator.jpg" width=250></td>
     <td><img src="./output/movie_finder.jpg" width=250></td>
     <td><img src="./output/color_generator.jpg" width=250></td>
     <td><img src="./output/to_do_list.jpg" width=250></td>
+    </tr>
+<tr>
+    <th>QR Scanner</th>
+    <th>QR Generator</th></tr>
+  <tr>
+    <tr>
     <td><img src="./output/qr_scanner.jpg" width=250></td>
     <td><img src="./output/qr_generator.jpg" width=250></td>
   </tr>

@@ -10,6 +10,7 @@ export const FavoritesContext = createContext({
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
+  //function to add favourite recipe to FavoriteScreen
   const addFavorite = (recipe) => {
     // Check if the recipe already exists in the favorites
     const alreadyExists = favorites.some(fav => fav.id === recipe.id);
@@ -18,6 +19,7 @@ export const FavoritesProvider = ({ children }) => {
     }
   };
 
+// function to remove favourite recipe from FavouritesScreen
   const removeFavorite = (recipeId) => {
     setFavorites(favorites.filter((recipe) => recipe.id !== recipeId));
   };

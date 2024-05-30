@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+//Component used to display duration,complexity of recipe
 function RecipeInfo({  duration, complexity }) {
   return (
     <View style={styles.details}>

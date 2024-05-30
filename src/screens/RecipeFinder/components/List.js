@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+//Reuseable component used to display instructions of preparing recipe
 function List({ data }) {
   return (
     data.map((dataPoint) => (

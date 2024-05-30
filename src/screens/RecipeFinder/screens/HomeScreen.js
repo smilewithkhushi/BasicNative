@@ -4,17 +4,18 @@ import { View, TextInput, Button, FlatList, Text, TouchableOpacity,StyleSheet,Im
 import { searchRecipes } from '../api/spoonacular';
 
 const HomeScreen = ({ navigation }) => {
-  const [query, setQuery] = useState('');
-  const [recipes, setRecipes] = useState([]);
+  const [query, setQuery] = useState(''); // State for the search query input
+  const [recipes, setRecipes] = useState([]); // State for storing the search results
 
+  // Function to handle the search action
   const handleSearch = async () => {
-    const results = await searchRecipes(query);
-    //console.log(results)
-    setRecipes(results);
+    const results = await searchRecipes(query); // Call the API to search for recipes
+    setRecipes(results); // Update the recipes state with the search results
   };
 
   return (
     <View style={styles.container}>
+      {/* TextInput for entering the search query */}
       <TextInput
         placeholder="Search for a recipe"
         value={query}
@@ -22,14 +23,19 @@ const HomeScreen = ({ navigation }) => {
         style={styles.input}
       />
       <View style={styles.button}>
-      <Button title="Search" onPress={handleSearch}  color="#f50892"/>
+        {/* Button to trigger the search */}
+        <Button title="Search" onPress={handleSearch} color="#f50892" />
       </View>
+      {/* FlatList to display the search results */}
       <FlatList
-        data={recipes}
-        keyExtractor={(item) => item.id.toString()}
+        data={recipes} // Data to be rendered
+        keyExtractor={(item) => item.id.toString()} // Unique key for each item
         renderItem={({ item }) => (
+          // TouchableOpacity to navigate to the RecipeDetail screen on press
           <TouchableOpacity onPress={() => navigation.navigate('RecipeDetail', { id: item.id })} style={styles.recipeContainer}>
-            <Image source={{uri:item.image}} style={styles.image}/>
+            {/* Display recipe image */}
+            <Image source={{ uri: item.image }} style={styles.image} />
+            {/* Display recipe title */}
             <Text style={styles.text}>{item.title}</Text>
           </TouchableOpacity>
         )}
@@ -39,6 +45,8 @@ const HomeScreen = ({ navigation }) => {
 };
 
 export default HomeScreen;
+
+//Styles for HomeScreen
 
 const styles=StyleSheet.create({
  container:{

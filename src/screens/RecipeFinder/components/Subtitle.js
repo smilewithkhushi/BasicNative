@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+// component used to display headers
 function Subtitle({ children }) {
   return (
     <View style={styles.subtitleStyle}>

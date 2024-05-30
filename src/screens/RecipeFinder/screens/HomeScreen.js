@@ -4,13 +4,12 @@ import { View, TextInput, Button, FlatList, Text, TouchableOpacity,StyleSheet,Im
 import { searchRecipes } from '../api/spoonacular';
 
 const HomeScreen = ({ navigation }) => {
-  const [query, setQuery] = useState(''); // State for the search query input
-  const [recipes, setRecipes] = useState([]); // State for storing the search results
-
+  const [query, setQuery] = useState(''); 
+  const [recipes, setRecipes] = useState([]); 
   // Function to handle the search action
   const handleSearch = async () => {
-    const results = await searchRecipes(query); // Call the API to search for recipes
-    setRecipes(results); // Update the recipes state with the search results
+    const results = await searchRecipes(query); 
+    setRecipes(results); 
   };
 
   return (

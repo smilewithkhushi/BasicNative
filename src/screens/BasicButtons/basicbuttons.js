@@ -1,9 +1,10 @@
-import { StyleSheet, View, Text, StatusBar, TouchableHighlight, TouchableOpacity, Image, Pressable, Button, ScrollView } from "react-native";
+import { StyleSheet, View, Text, StatusBar, TouchableHighlight, TouchableOpacity, Image, Pressable, Button, ScrollView ,Modal} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { Alert } from "react-native";
 export default function DayOne() {
     const [count, setCount] = useState(0);
+    const [modalVisible, setModalVisible] = useState(false);
     const navigation = useNavigation();
 
     return (
@@ -51,6 +52,30 @@ export default function DayOne() {
                     <Button title="Increment" style={{ padding: 6, }} onPress={() => { setCount(count + 1) }} />
                     <Button title="Decrement" style={{ padding: 6, }} onPress={() => { setCount(count - 1) }} />
                 </View>
+                <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert('Modal has been closed.');
+          setModalVisible(!modalVisible);
+        }}>
+        <View style={styles.center}>
+          <View style={styles.modalView}>
+            <Text style={styles.modalText}>This a Modal</Text>
+            <Pressable
+              style={styles.modalBtn}
+              onPress={() => setModalVisible(!modalVisible)}>
+              <Text style={styles.textStyle}>Hide Modal</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+      <Pressable
+        style={styles.modalBtn}
+        onPress={() => setModalVisible(true)}>
+        <Text style={styles.textStyle}>Show Modal</Text>
+      </Pressable>
 
             </View>
         </ScrollView>
@@ -113,5 +138,44 @@ const styles = StyleSheet.create({
         margin: 2,
         fontSize: 16,
     }
+    ,
+    center:{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 22,
+      },
+      modalView: {
+        margin: 20,
+        backgroundColor: 'white',
+        borderRadius: 20,
+        padding: 35,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5,
+      },
+  
+     
+      modalText: {
+        marginBottom: 15,
+        textAlign: 'center',
+    },
+    modalBtn:{
+        margin: 10,
+        padding: 10,
+        backgroundColor: '#600047',
+        borderRadius: 10,
+    },
+    textStyle: {
+        color: 'white',
+        fontWeight: 'bold',
+        textAlign: 'center',
+      },
 });
 

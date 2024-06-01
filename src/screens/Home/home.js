@@ -135,6 +135,15 @@ export default function Home() {
             >
               Recipe Finder
             </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Tic-Tac-Toe List is Pressed!");
+                navigation.navigate("Tic Tac Toe");
+              }}
+            >
+              Tic Tac Toe
+            </Text>
           </Pressable>
         </View>
       </View>

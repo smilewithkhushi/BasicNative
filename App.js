@@ -26,6 +26,10 @@ import MovieFinder from './src/screens/MovieFinder/MovieFinder';
 import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
 import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
+import TicTacToe from "./src/screens/TicTacToe/TicTacToe";
+import Icons from "./src/screens/TicTacToe/components/Icons";
+
+
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
@@ -100,6 +104,11 @@ export default function App() {
           name="Recipe Finder"
           component={RecipeFinder}
           options={{headerShown: false }}
+        />
+        <Stack.Screen
+          name="Tic Tac Toe"
+          component={TicTacToe}
+          options={{ headerShown: true, animation: "slide_from_right" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

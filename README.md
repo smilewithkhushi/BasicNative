@@ -32,11 +32,14 @@
     </tr>
 <tr>
     <th>QR Scanner</th>
-    <th>QR Generator</th></tr>
+    <th>QR Generator</th>
+    <th>Tic Tac Toe</th>
+    </tr>
   <tr>
     <tr>
     <td><img src="./output/qr_scanner.jpg" width=250></td>
     <td><img src="./output/qr_generator.jpg" width=250></td>
+    <td><img src="./output/TicTacToe.jpg" width=250></td>
   </tr>
 </table>
 

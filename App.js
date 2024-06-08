@@ -114,7 +114,29 @@ export default function App() {
         <Stack.Screen
           name="Anime Finder"
           component={AnimeFinder}
-          options={{ headerShown: true, animation: "slide_from_right" }}
+          options={{
+            headerShown: true,
+            headerStyle: {
+              backgroundColor: '#121212',
+            },
+            headerTintColor: '#00ff99',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            cardStyle: { backgroundColor: '#121212' },
+            animationEnabled: true,
+            animationTypeForReplace: 'push',
+            transitionSpec: {
+              open: {
+                animation: 'timing',
+                config: { duration: 300 },
+              },
+              close: {
+                animation: 'timing',
+                config: { duration: 300 },
+              },
+            },
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>

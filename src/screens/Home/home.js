@@ -144,6 +144,15 @@ export default function Home() {
             >
               Tic Tac Toe
             </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Tic-Tac-Toe List is Pressed!");
+                navigation.navigate("Anime Finder");
+              }}
+            >
+              Anime Finder
+            </Text>
           </Pressable>
         </View>
       </View>

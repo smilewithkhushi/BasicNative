@@ -28,6 +28,7 @@ import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
 import TicTacToe from "./src/screens/TicTacToe/TicTacToe";
 import Icons from "./src/screens/TicTacToe/components/Icons";
+import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
 
 
 export default function App() {
@@ -72,7 +73,7 @@ export default function App() {
         options={{ headerShown: true, animation: "slide_from_right" }}
         />
 
-<Stack.Screen
+  <Stack.Screen
         name="Hex Color"
         component={HexColorGeneratorScreen}
         options={{ headerShown: true, animation: "slide_from_right" }}
@@ -108,6 +109,11 @@ export default function App() {
         <Stack.Screen
           name="Tic Tac Toe"
           component={TicTacToe}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        <Stack.Screen
+          name="Anime Finder"
+          component={AnimeFinder}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
       </Stack.Navigator>

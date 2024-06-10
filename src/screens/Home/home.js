@@ -147,7 +147,7 @@ export default function Home() {
             <Text
               style={styles.button}
               onPress={() => {
-                console.log("Button to WorkoutOverview  is Pressed!");
+                console.log("Button to Workout Overview is Pressed!");
                 navigation.navigate("Workout Overview");
               }}
             >
@@ -161,6 +161,22 @@ export default function Home() {
               }}
             >
               Add Workout
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                navigation.navigate("Anime Finder");
+              }}
+            >
+              Anime Finder
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                navigation.navigate("Pokedex");
+              }}
+            >
+              Pokedex
             </Text>
           </Pressable>
         </View>

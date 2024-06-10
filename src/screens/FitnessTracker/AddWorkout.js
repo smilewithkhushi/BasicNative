@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Image } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Image, Alert } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -22,6 +22,21 @@ const AddWorkout = ({ navigation }) => {
   ];
 
   const handleAddWorkout = async () => {
+    if (!type) {
+      Alert.alert('Select Workout Type', 'Please select a workout type.');
+      return;
+    }
+
+    if (!duration) {
+      Alert.alert('Enter Duration', 'Please enter the workout duration.');
+      return;
+    }
+
+    if (!calories) {
+      Alert.alert('Enter Calories Burned', 'Please enter the calories burned.');
+      return;
+    }
+
     const workoutType = isCustom ? customType : type;
     const newWorkout = { type: workoutType, duration, calories };
 
@@ -106,7 +121,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: 0,
     paddingBottom: 20,
-    
   },
   image: {
     width: '100%',

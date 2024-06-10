@@ -147,11 +147,18 @@ export default function Home() {
             <Text
               style={styles.button}
               onPress={() => {
-                console.log("Button to Tic-Tac-Toe List is Pressed!");
                 navigation.navigate("Anime Finder");
               }}
             >
               Anime Finder
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                navigation.navigate("Pokedex");
+              }}
+            >
+              Pokedex
             </Text>
           </Pressable>
         </View>

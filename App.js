@@ -29,6 +29,7 @@ import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
 import TicTacToe from "./src/screens/TicTacToe/TicTacToe";
 import Icons from "./src/screens/TicTacToe/components/Icons";
 import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
+import Pokedex from "./src/screens/Pokedex/Pokedex";
 
 
 export default function App() {
@@ -114,6 +115,33 @@ export default function App() {
         <Stack.Screen
           name="Anime Finder"
           component={AnimeFinder}
+          options={{
+            headerShown: true,
+            headerStyle: {
+              backgroundColor: '#121212',
+            },
+            headerTintColor: '#00ff99',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            cardStyle: { backgroundColor: '#121212' },
+            animationEnabled: true,
+            animationTypeForReplace: 'push',
+            transitionSpec: {
+              open: {
+                animation: 'timing',
+                config: { duration: 300 },
+              },
+              close: {
+                animation: 'timing',
+                config: { duration: 300 },
+              },
+            },
+          }}
+        />
+        <Stack.Screen
+          name="Pokedex"
+          component={Pokedex}
           options={{
             headerShown: true,
             headerStyle: {

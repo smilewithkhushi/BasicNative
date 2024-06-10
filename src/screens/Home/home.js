@@ -144,6 +144,24 @@ export default function Home() {
             >
               Tic Tac Toe
             </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to WorkoutOverview  is Pressed!");
+                navigation.navigate("Workout Overview");
+              }}
+            >
+              Workout Overview
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Add Workout is Pressed!");
+                navigation.navigate("Add Workout");
+              }}
+            >
+              Add Workout
+            </Text>
           </Pressable>
         </View>
       </View>

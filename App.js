@@ -28,7 +28,8 @@ import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
 import TicTacToe from "./src/screens/TicTacToe/TicTacToe";
 import Icons from "./src/screens/TicTacToe/components/Icons";
-
+import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
+import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -65,36 +66,31 @@ export default function App() {
           component={Calculator}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
-
         <Stack.Screen
-        name="Movie Finder"
-        component={MovieFinder}
-        options={{ headerShown: true, animation: "slide_from_right" }}
+          name="Movie Finder"
+          component={MovieFinder}
+          options={{ headerShown: true, animation: "slide_from_right" }}
         />
-
-<Stack.Screen
-        name="Hex Color"
-        component={HexColorGeneratorScreen}
-        options={{ headerShown: true, animation: "slide_from_right" }}
+        <Stack.Screen
+          name="Hex Color"
+          component={HexColorGeneratorScreen}
+          options={{ headerShown: true, animation: "slide_from_right" }}
         />
         <Stack.Screen
           name="To Do List"
           component={ToDoList}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
-
         <Stack.Screen
           name="Add Task"
           component={AddTaskScreen}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
-
         <Stack.Screen
           name="QR Scanner"
           component={QRScanner}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
-
         <Stack.Screen
           name="QR Generator"
           component={QRCodeGenerator}
@@ -103,11 +99,21 @@ export default function App() {
         <Stack.Screen
           name="Recipe Finder"
           component={RecipeFinder}
-          options={{headerShown: false }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Tic Tac Toe"
           component={TicTacToe}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        <Stack.Screen
+          name="Workout Overview"
+          component={WorkoutOverview}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        <Stack.Screen
+          name="Add Workout"
+          component={AddWorkout}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
       </Stack.Navigator>

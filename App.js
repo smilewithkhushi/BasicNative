@@ -30,6 +30,8 @@ import TicTacToe from "./src/screens/TicTacToe/TicTacToe";
 import Icons from "./src/screens/TicTacToe/components/Icons";
 import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
 import Pokedex from "./src/screens/Pokedex/Pokedex";
+import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
+import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
 
 
 export default function App() {
@@ -112,6 +114,17 @@ export default function App() {
           component={TicTacToe}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
+        <Stack.Screen
+          name="Workout Overview"
+          component={WorkoutOverview}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        <Stack.Screen
+          name="Add Workout"
+          component={AddWorkout}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        
         <Stack.Screen
           name="Anime Finder"
           component={AnimeFinder}

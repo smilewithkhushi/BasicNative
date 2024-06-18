@@ -34,15 +34,16 @@
     <th>QR Scanner</th>
     <th>QR Generator</th>
     <th>Tic Tac Toe</th>
+    <th>Timer App</th>
     </tr>
   <tr>
     <tr>
     <td><img src="./output/qr_scanner.jpg" width=250></td>
     <td><img src="./output/qr_generator.jpg" width=250></td>
     <td><img src="./output/TicTacToe.jpg" width=250></td>
+    <td><img src="./output/Timer App (6).jpg" width=250></td>
   </tr>
 </table>
-
 
 <hr>
 
@@ -50,23 +51,20 @@
 
 Here're some of the project's best features:
 
-*   Beginner friendly projects
-*   Easy to understand code
-*   Implementation of all the fundamental concepts of React Native
+- Beginner friendly projects
+- Easy to understand code
+- Implementation of all the fundamental concepts of React Native
 
-  
 <hr>
   
 <h2>💻 Built with 💻</h2>
 
 Technologies used in the project:
 
-*   React Native Expo
-*   Tailwind CSS
-
+- React Native Expo
+- Tailwind CSS
 
 <hr>
-
 
 <h2>🛠️ Installation Steps: 🛠️</h2>
 
@@ -91,7 +89,7 @@ code .
 <p>4. Install required packages</p>
 
 ```
-npm install 
+npm install
 ```
 
 <p>5. Start the deployment server</p>
@@ -117,11 +115,13 @@ npx expo start
 ```
 npx expo install --fix
 ```
+
 <p>3. If there is an issue to use commands containing 'expo' then, the following command would help in fixing the issue.</p>
 
 ```
 npm install -g react-native-cli
 ```
+
 <p>4. If there is an error while using the QR Scanner or QR Generator try to use the below given commands.</p>
 
 ```

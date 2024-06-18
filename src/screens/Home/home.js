@@ -81,21 +81,35 @@ export default function Home() {
               Calculator
             </Text>
 
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Calculator is Pressed!");
+                navigation.navigate("Calculator");
+              }}
+            >
+              Calculator
+            </Text>
 
-            <Text style={styles.button} onPress={(() => {
-              console.log("Button to Calculator is Pressed!")
-              navigation.navigate("Calculator")
-            })}>Calculator</Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Movie Finder is Pressed!");
+                navigation.navigate("Movie Finder");
+              }}
+            >
+              Movie Finder
+            </Text>
 
-<Text style={styles.button} onPress={(() => {
-              console.log("Button to Movie Finder is Pressed!")
-              navigation.navigate("Movie Finder")
-            })}>Movie Finder</Text>
-
-<Text style={styles.button} onPress={(() => {
-              console.log("Button to Color Generate is Pressed!")
-              navigation.navigate("Hex Color")
-            })}>Color Generator</Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Color Generate is Pressed!");
+                navigation.navigate("Hex Color");
+              }}
+            >
+              Color Generator
+            </Text>
 
             <Text
               style={styles.button}
@@ -162,6 +176,7 @@ export default function Home() {
             >
               Add Workout
             </Text>
+
             <Text
               style={styles.button}
               onPress={() => {
@@ -177,6 +192,15 @@ export default function Home() {
               }}
             >
               Pokedex
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Clock App is Pressed!");
+                navigation.navigate("Timer App");
+              }}
+            >
+              Clock
             </Text>
           </Pressable>
         </View>

@@ -32,6 +32,7 @@ import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
 import Pokedex from "./src/screens/Pokedex/Pokedex";
 import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
 import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
+import CodingQuiz from "./src/screens/CodingQuiz/CodingQuiz";
 
 
 export default function App() {
@@ -178,6 +179,11 @@ export default function App() {
               },
             },
           }}
+        />
+        <Stack.Screen
+          name="Coding Quiz"
+          component={CodingQuiz}
+          options={{ headerShown: true, animation: "slide_from_right" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

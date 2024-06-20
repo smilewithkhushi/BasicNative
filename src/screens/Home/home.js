@@ -178,6 +178,14 @@ export default function Home() {
             >
               Pokedex
             </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                navigation.navigate("Coding Quiz");
+              }}
+            >
+              Quiz Session
+            </Text>
           </Pressable>
         </View>
       </View>

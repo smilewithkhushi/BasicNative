@@ -196,6 +196,14 @@ export default function Home() {
             <Text
               style={styles.button}
               onPress={() => {
+                navigation.navigate("Coding Quiz");
+              }}
+            >
+              Quiz Session
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
                 console.log("Button to Clock App is Pressed!");
                 navigation.navigate("Timer App");
               }}

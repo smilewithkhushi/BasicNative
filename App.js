@@ -22,7 +22,7 @@ import BookFinder from "./src/screens/BookFinder/BookFinder";
 import ToDoList from "./src/screens/ToDoList/toDoList";
 import AddTaskScreen from "./src/screens/ToDoList/addTask";
 import QRScanner from "./src/screens/QRScanner/qrScanner";
-import MovieFinder from './src/screens/MovieFinder/MovieFinder';
+import MovieFinder from "./src/screens/MovieFinder/MovieFinder";
 import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
 import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
@@ -32,7 +32,8 @@ import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
 import Pokedex from "./src/screens/Pokedex/Pokedex";
 import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
 import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
-
+import AddExpense from "./src/screens/ExpenseTracker/AddExpense";
+import Dashboard from "./src/screens/ExpenseTracker/Dasboard";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -71,15 +72,15 @@ export default function App() {
         />
 
         <Stack.Screen
-        name="Movie Finder"
-        component={MovieFinder}
-        options={{ headerShown: true, animation: "slide_from_right" }}
+          name="Movie Finder"
+          component={MovieFinder}
+          options={{ headerShown: true, animation: "slide_from_right" }}
         />
 
-  <Stack.Screen
-        name="Hex Color"
-        component={HexColorGeneratorScreen}
-        options={{ headerShown: true, animation: "slide_from_right" }}
+        <Stack.Screen
+          name="Hex Color"
+          component={HexColorGeneratorScreen}
+          options={{ headerShown: true, animation: "slide_from_right" }}
         />
         <Stack.Screen
           name="To Do List"
@@ -88,11 +89,21 @@ export default function App() {
         />
 
         <Stack.Screen
+          name="Dashboard"
+          component={Dashboard}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
+        <Stack.Screen
           name="Add Task"
           component={AddTaskScreen}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
 
+        <Stack.Screen
+          name="Add Expense"
+          component={AddExpense}
+          options={{ headerShown: true, animation: "slide_from_right" }}
+        />
         <Stack.Screen
           name="QR Scanner"
           component={QRScanner}
@@ -107,7 +118,7 @@ export default function App() {
         <Stack.Screen
           name="Recipe Finder"
           component={RecipeFinder}
-          options={{headerShown: false }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Tic Tac Toe"
@@ -124,29 +135,29 @@ export default function App() {
           component={AddWorkout}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
-        
+
         <Stack.Screen
           name="Anime Finder"
           component={AnimeFinder}
           options={{
             headerShown: true,
             headerStyle: {
-              backgroundColor: '#121212',
+              backgroundColor: "#121212",
             },
-            headerTintColor: '#00ff99',
+            headerTintColor: "#00ff99",
             headerTitleStyle: {
-              fontWeight: 'bold',
+              fontWeight: "bold",
             },
-            cardStyle: { backgroundColor: '#121212' },
+            cardStyle: { backgroundColor: "#121212" },
             animationEnabled: true,
-            animationTypeForReplace: 'push',
+            animationTypeForReplace: "push",
             transitionSpec: {
               open: {
-                animation: 'timing',
+                animation: "timing",
                 config: { duration: 300 },
               },
               close: {
-                animation: 'timing',
+                animation: "timing",
                 config: { duration: 300 },
               },
             },
@@ -158,22 +169,22 @@ export default function App() {
           options={{
             headerShown: true,
             headerStyle: {
-              backgroundColor: '#121212',
+              backgroundColor: "#121212",
             },
-            headerTintColor: '#00ff99',
+            headerTintColor: "#00ff99",
             headerTitleStyle: {
-              fontWeight: 'bold',
+              fontWeight: "bold",
             },
-            cardStyle: { backgroundColor: '#121212' },
+            cardStyle: { backgroundColor: "#121212" },
             animationEnabled: true,
-            animationTypeForReplace: 'push',
+            animationTypeForReplace: "push",
             transitionSpec: {
               open: {
-                animation: 'timing',
+                animation: "timing",
                 config: { duration: 300 },
               },
               close: {
-                animation: 'timing',
+                animation: "timing",
                 config: { duration: 300 },
               },
             },

@@ -81,21 +81,35 @@ export default function Home() {
               Calculator
             </Text>
 
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Calculator is Pressed!");
+                navigation.navigate("Calculator");
+              }}
+            >
+              Calculator
+            </Text>
 
-            <Text style={styles.button} onPress={(() => {
-              console.log("Button to Calculator is Pressed!")
-              navigation.navigate("Calculator")
-            })}>Calculator</Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Movie Finder is Pressed!");
+                navigation.navigate("Movie Finder");
+              }}
+            >
+              Movie Finder
+            </Text>
 
-<Text style={styles.button} onPress={(() => {
-              console.log("Button to Movie Finder is Pressed!")
-              navigation.navigate("Movie Finder")
-            })}>Movie Finder</Text>
-
-<Text style={styles.button} onPress={(() => {
-              console.log("Button to Color Generate is Pressed!")
-              navigation.navigate("Hex Color")
-            })}>Color Generator</Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Color Generate is Pressed!");
+                navigation.navigate("Hex Color");
+              }}
+            >
+              Color Generator
+            </Text>
 
             <Text
               style={styles.button}
@@ -105,6 +119,16 @@ export default function Home() {
               }}
             >
               To Do List
+            </Text>
+
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Add Expense is Pressed!");
+                navigation.navigate("Dashboard");
+              }}
+            >
+              Add Expense
             </Text>
 
             <Text

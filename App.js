@@ -11,6 +11,7 @@ import {
   Touchable,
   Pressable,
 } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Calculator from "./src/screens/Calculator/calculator";
@@ -22,7 +23,7 @@ import BookFinder from "./src/screens/BookFinder/BookFinder";
 import ToDoList from "./src/screens/ToDoList/toDoList";
 import AddTaskScreen from "./src/screens/ToDoList/addTask";
 import QRScanner from "./src/screens/QRScanner/qrScanner";
-import MovieFinder from './src/screens/MovieFinder/MovieFinder';
+import MovieFinder from "./src/screens/MovieFinder/MovieFinder";
 import HexColorGeneratorScreen from "./src/screens/HexColorGenerator/HexColorGeneratorScreen";
 import QRCodeGenerator from "./src/screens/QRGenerator/QRGenerator";
 import RecipeFinder from "./src/screens/RecipeFinder/RecipeFinder";
@@ -33,159 +34,166 @@ import Pokedex from "./src/screens/Pokedex/Pokedex";
 import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
 import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
 import CodingQuiz from "./src/screens/CodingQuiz/CodingQuiz";
-
+import TimerHome from "./src/screens/Timer/TimerHome";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ headerShown: false, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Basic Components"
-          component={BasicButtons}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Image Gallery"
-          component={Gallery}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Rock Paper Scissors Game"
-          component={RPSGame}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Book Finder"
-          component={BookFinder}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Calculator"
-          component={Calculator}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ headerShown: false, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Basic Components"
+            component={BasicButtons}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Image Gallery"
+            component={Gallery}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Rock Paper Scissors Game"
+            component={RPSGame}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Book Finder"
+            component={BookFinder}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Calculator"
+            component={Calculator}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
 
-        <Stack.Screen
-        name="Movie Finder"
-        component={MovieFinder}
-        options={{ headerShown: true, animation: "slide_from_right" }}
-        />
+          <Stack.Screen
+            name="Movie Finder"
+            component={MovieFinder}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
 
-  <Stack.Screen
-        name="Hex Color"
-        component={HexColorGeneratorScreen}
-        options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="To Do List"
-          component={ToDoList}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
+          <Stack.Screen
+            name="Hex Color"
+            component={HexColorGeneratorScreen}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="To Do List"
+            component={ToDoList}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
 
-        <Stack.Screen
-          name="Add Task"
-          component={AddTaskScreen}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
+          <Stack.Screen
+            name="Add Task"
+            component={AddTaskScreen}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
 
-        <Stack.Screen
-          name="QR Scanner"
-          component={QRScanner}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
+          <Stack.Screen
+            name="QR Scanner"
+            component={QRScanner}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
 
-        <Stack.Screen
-          name="QR Generator"
-          component={QRCodeGenerator}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Recipe Finder"
-          component={RecipeFinder}
-          options={{headerShown: false }}
-        />
-        <Stack.Screen
-          name="Tic Tac Toe"
-          component={TicTacToe}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Workout Overview"
-          component={WorkoutOverview}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        <Stack.Screen
-          name="Add Workout"
-          component={AddWorkout}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
-        
-        <Stack.Screen
-          name="Anime Finder"
-          component={AnimeFinder}
-          options={{
-            headerShown: true,
-            headerStyle: {
-              backgroundColor: '#121212',
-            },
-            headerTintColor: '#00ff99',
-            headerTitleStyle: {
-              fontWeight: 'bold',
-            },
-            cardStyle: { backgroundColor: '#121212' },
-            animationEnabled: true,
-            animationTypeForReplace: 'push',
-            transitionSpec: {
-              open: {
-                animation: 'timing',
-                config: { duration: 300 },
+          <Stack.Screen
+            name="QR Generator"
+            component={QRCodeGenerator}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Recipe Finder"
+            component={RecipeFinder}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Tic Tac Toe"
+            component={TicTacToe}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Workout Overview"
+            component={WorkoutOverview}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Timer App"
+            component={TimerHome}
+            options={{ headerShown: false, animation: "slide_from_right" }}
+          />
+          <Stack.Screen
+            name="Add Workout"
+            component={AddWorkout}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+
+          <Stack.Screen
+            name="Anime Finder"
+            component={AnimeFinder}
+            options={{
+              headerShown: true,
+              headerStyle: {
+                backgroundColor: "#121212",
               },
-              close: {
-                animation: 'timing',
-                config: { duration: 300 },
+              headerTintColor: "#00ff99",
+              headerTitleStyle: {
+                fontWeight: "bold",
               },
-            },
-          }}
-        />
-        <Stack.Screen
-          name="Pokedex"
-          component={Pokedex}
-          options={{
-            headerShown: true,
-            headerStyle: {
-              backgroundColor: '#121212',
-            },
-            headerTintColor: '#00ff99',
-            headerTitleStyle: {
-              fontWeight: 'bold',
-            },
-            cardStyle: { backgroundColor: '#121212' },
-            animationEnabled: true,
-            animationTypeForReplace: 'push',
-            transitionSpec: {
-              open: {
-                animation: 'timing',
-                config: { duration: 300 },
+              cardStyle: { backgroundColor: "#121212" },
+              animationEnabled: true,
+              animationTypeForReplace: "push",
+              transitionSpec: {
+                open: {
+                  animation: "timing",
+                  config: { duration: 300 },
+                },
+                close: {
+                  animation: "timing",
+                  config: { duration: 300 },
+                },
               },
-              close: {
-                animation: 'timing',
-                config: { duration: 300 },
+            }}
+          />
+          <Stack.Screen
+            name="Pokedex"
+            component={Pokedex}
+            options={{
+              headerShown: true,
+              headerStyle: {
+                backgroundColor: "#121212",
               },
-            },
-          }}
-        />
+              headerTintColor: "#00ff99",
+              headerTitleStyle: {
+                fontWeight: "bold",
+              },
+              cardStyle: { backgroundColor: "#121212" },
+              animationEnabled: true,
+              animationTypeForReplace: "push",
+              transitionSpec: {
+                open: {
+                  animation: "timing",
+                  config: { duration: 300 },
+                },
+                close: {
+                  animation: "timing",
+                  config: { duration: 300 },
+                },
+              },
+            }}
+          />
         <Stack.Screen
           name="Coding Quiz"
           component={CodingQuiz}
           options={{ headerShown: true, animation: "slide_from_right" }}
         />
-      </Stack.Navigator>
-    </NavigationContainer>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 }

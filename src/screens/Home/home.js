@@ -186,6 +186,7 @@ export default function Home() {
             >
               Add Workout
             </Text>
+
             <Text
               style={styles.button}
               onPress={() => {
@@ -209,6 +210,15 @@ export default function Home() {
               }}
             >
               Quiz Session
+            </Text>
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to Clock App is Pressed!");
+                navigation.navigate("Timer App");
+              }}
+            >
+              Clock
             </Text>
           </Pressable>
         </View>

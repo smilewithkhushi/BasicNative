@@ -124,6 +124,16 @@ export default function Home() {
             <Text
               style={styles.button}
               onPress={() => {
+                console.log("Button to Add Expense is Pressed!");
+                navigation.navigate("Dashboard");
+              }}
+            >
+              Add Expense
+            </Text>
+
+            <Text
+              style={styles.button}
+              onPress={() => {
                 console.log("Button to To Do List is Pressed!");
                 navigation.navigate("QR Scanner");
               }}

@@ -33,6 +33,8 @@ import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
 import Pokedex from "./src/screens/Pokedex/Pokedex";
 import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
 import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
+import AddExpense from "./src/screens/ExpenseTracker/AddExpense";
+import Dashboard from "./src/screens/ExpenseTracker/Dasboard";
 import CodingQuiz from "./src/screens/CodingQuiz/CodingQuiz";
 import TimerHome from "./src/screens/Timer/TimerHome";
 
@@ -93,6 +95,18 @@ export default function App() {
           <Stack.Screen
             name="Add Task"
             component={AddTaskScreen}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+
+          <Stack.Screen
+            name="Dashboard"
+            component={Dashboard}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
+
+          <Stack.Screen
+            name="Add Expense"
+            component={AddExpense}
             options={{ headerShown: true, animation: "slide_from_right" }}
           />
 
@@ -187,11 +201,11 @@ export default function App() {
               },
             }}
           />
-        <Stack.Screen
-          name="Coding Quiz"
-          component={CodingQuiz}
-          options={{ headerShown: true, animation: "slide_from_right" }}
-        />
+          <Stack.Screen
+            name="Coding Quiz"
+            component={CodingQuiz}
+            options={{ headerShown: true, animation: "slide_from_right" }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </GestureHandlerRootView>

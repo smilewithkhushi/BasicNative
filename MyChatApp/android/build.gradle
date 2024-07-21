@@ -1,0 +1,29 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 23
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "26.1.10909125"
+        kotlinVersion = "1.9.22"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:4.3.10") // Update to the latest version
+        classpath("com.facebook.react:react-native-gradle-plugin") // Ensure this matches your React Native version
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10") // Update to the latest version
+
+        // Add the Google services classpath
+        classpath 'com.google.gms:google-services:4.3.10'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}

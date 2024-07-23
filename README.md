@@ -133,3 +133,16 @@ npm install react-native-qrcode-svg
 <h2>🛡️ License: 🛡️ </h2>
 
 This project is licensed under the MIT
+
+<!-- Cotributors -->
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f497/512.webp" width="35" height="35"> Contributors</h2>
+</div>
+
+Thank you for contributing to our project! Your help is greatly appreciated in making BasicNative even better. 😊
+
+<center>
+<a href="https://github.com/smilewithkhushi/BasicNative/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=smilewithkhushi/BasicNative" />
+</a>
+</center>

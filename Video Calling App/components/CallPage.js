@@ -13,8 +13,8 @@ const CallPage=(props,{navigation})=>{
     return (
         <View style={styles.container}>
             <ZegoUIKitPrebuiltCall
-                appID={618790259}
-                appSign={'5fae635116eb3b1ae60fa10ca0ef773cf286b0f62ffc79dab42546f18e17b6b2'}
+                appID={your app id}
+                appSign={'Your app signin id'}
                 userID={name} // userID can be something like a phone number or the user id on your own user system. 
                 userName={name}
                 callID={id} // callID can be any unique string. 

@@ -220,6 +220,17 @@ export default function Home() {
             >
               Clock
             </Text>
+
+            <Text
+              style={styles.button}
+              onPress={() => {
+                console.log("Button to MusicPlayer is Pressed!");
+                navigation.navigate("MusicPlayer");
+              }}
+            >
+              MusicPlayer
+            </Text>
+
           </Pressable>
         </View>
       </View>

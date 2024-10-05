@@ -37,6 +37,7 @@ import AddExpense from "./src/screens/ExpenseTracker/AddExpense";
 import Dashboard from "./src/screens/ExpenseTracker/Dasboard";
 import CodingQuiz from "./src/screens/CodingQuiz/CodingQuiz";
 import TimerHome from "./src/screens/Timer/TimerHome";
+import MusicPlayer from "./src/screens/MusicPlayer/musicplayer";
 import Octicons from 'react-native-vector-icons/Octicons'
 
 export default function App() {
@@ -219,6 +220,18 @@ export default function App() {
             component={TimerHome}
             options={{ headerShown: false, animation: "slide_from_right" }}
           />
+
+<Stack.Screen
+            name="Music Player"
+            component={MusicPlayer}
+            options={{ headerShown: true, animation: "slide_from_right", 
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#E8EBE9'
+              },
+            }}
+          />
+
           <Stack.Screen
             name="Add Workout"
             component={AddWorkout}

@@ -1,0 +1,1 @@
+{"version":3,"names":["default","createMaterialBottomTabNavigator","MaterialBottomTabView"],"sourceRoot":"../../../src","sources":["react-navigation/index.tsx"],"mappings":"AAAA;AACA;AACA;AACA,SAASA,OAAO,IAAIC,gCAAgC,QAAQ,+CAA+C;;AAE3G;AACA;AACA;AACA,SAASD,OAAO,IAAIE,qBAAqB,QAAQ,+BAA+B;;AAEhF;AACA;AACA"}

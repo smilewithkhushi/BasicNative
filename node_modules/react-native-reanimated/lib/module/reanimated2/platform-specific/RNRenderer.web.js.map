@@ -1,0 +1,1 @@
+{"version":3,"names":["module","exports"],"sources":["RNRenderer.web.ts"],"sourcesContent":["'use strict';\n// RNRender is not used for web. An export is still defined to eliminate warnings from bundlers such as esbuild.\nmodule.exports = null;\n"],"mappings":"AAAA,YAAY;;AACZ;AACAA,MAAM,CAACC,OAAO,GAAG,IAAI","ignoreList":[]}

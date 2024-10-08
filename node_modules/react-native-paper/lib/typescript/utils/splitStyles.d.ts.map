@@ -1,0 +1,1 @@
+{"version":3,"file":"splitStyles.d.ts","sourceRoot":"","sources":["../../../src/utils/splitStyles.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,cAAc,CAAC;AAE9C,aAAK,YAAY,GAAG,SAAS,CAAC,CAAC,KAAK,EAAE,MAAM,SAAS,KAAK,OAAO,CAAC,EAAE,CAAC;AASrE;;;;;;;;;GASG;AACH,wBAAgB,WAAW,CAAC,KAAK,SAAS,YAAY,EACpD,MAAM,EAAE,SAAS,EACjB,GAAG,OAAO,EAAE,KAAK,+BAoClB"}

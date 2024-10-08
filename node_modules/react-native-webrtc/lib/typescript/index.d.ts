@@ -1,0 +1,15 @@
+import mediaDevices from './MediaDevices';
+import MediaStream from './MediaStream';
+import MediaStreamTrack from './MediaStreamTrack';
+import permissions from './Permissions';
+import RTCErrorEvent from './RTCErrorEvent';
+import RTCIceCandidate from './RTCIceCandidate';
+import RTCPeerConnection from './RTCPeerConnection';
+import RTCRtpReceiver from './RTCRtpReceiver';
+import RTCRtpSender from './RTCRtpSender';
+import RTCRtpTransceiver from './RTCRtpTransceiver';
+import RTCSessionDescription from './RTCSessionDescription';
+import RTCView from './RTCView';
+import ScreenCapturePickerView from './ScreenCapturePickerView';
+export { RTCIceCandidate, RTCPeerConnection, RTCSessionDescription, RTCView, ScreenCapturePickerView, RTCRtpTransceiver, RTCRtpReceiver, RTCRtpSender, RTCErrorEvent, MediaStream, MediaStreamTrack, mediaDevices, permissions, registerGlobals };
+declare function registerGlobals(): void;

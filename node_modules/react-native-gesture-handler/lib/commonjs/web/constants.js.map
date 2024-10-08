@@ -1,0 +1,1 @@
+{"version":3,"sources":["constants.ts"],"names":["DEFAULT_TOUCH_SLOP","MINIMAL_FLING_VELOCITY"],"mappings":";;;;;;AAAO,MAAMA,kBAAkB,GAAG,EAA3B;;AACA,MAAMC,sBAAsB,GAAG,GAA/B","sourcesContent":["export const DEFAULT_TOUCH_SLOP = 15;\nexport const MINIMAL_FLING_VELOCITY = 0.1;\n"]}

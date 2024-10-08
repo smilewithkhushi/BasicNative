@@ -52,6 +52,17 @@ export default function Home() {
             <Text
               style={styles.button}
               onPress={() => {
+                console.log("Button to Habit Tracker is Pressed!");
+                navigation.navigate("Habit Tracker");
+              }}
+            >
+              {" "}
+              Habit Tracker
+            </Text>
+
+            <Text
+              style={styles.button}
+              onPress={() => {
                 console.log("Button to Rock Paper Scissors Game is Pressed!");
                 navigation.navigate("Rock Paper Scissors Game");
               }}

@@ -1,0 +1,12 @@
+import type { TransformsStyle } from 'react-native';
+import type { AnimationConfig, AnimationNames, CustomConfig } from './config';
+import type { TransitionData } from './animationParser';
+import type { StyleProps } from '../../commonTypes';
+import { LayoutAnimationType } from '../animationBuilder/commonTypes';
+export declare function getReducedMotionFromConfig(config: CustomConfig): boolean;
+export declare function extractTransformFromStyle(style: StyleProps): any;
+export declare function getProcessedConfig(animationName: string, animationType: LayoutAnimationType, config: CustomConfig, initialAnimationName: AnimationNames): AnimationConfig;
+export declare function saveSnapshot(element: HTMLElement): void;
+export declare function setElementAnimation(element: HTMLElement, animationConfig: AnimationConfig, existingTransform?: TransformsStyle['transform']): void;
+export declare function handleLayoutTransition(element: HTMLElement, animationConfig: AnimationConfig, transitionData: TransitionData, existingTransform: TransformsStyle['transform'] | undefined): void;
+export declare function handleExitingAnimation(element: HTMLElement, animationConfig: AnimationConfig): void;

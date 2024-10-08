@@ -1,0 +1,63 @@
+{
+  "name": "react-native-toast-message",
+  "version": "2.2.0",
+  "description": "Toast message component for React Native",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calintamas/react-native-toast-message.git"
+  },
+  "keywords": [
+    "react-native",
+    "toast"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "build": "rm -rf ./lib && tsc",
+    "prettier": "./node_modules/.bin/prettier --write",
+    "lint": "./node_modules/.bin/eslint --fix",
+    "lint-staged": "./node_modules/.bin/lint-staged",
+    "test": "./node_modules/.bin/jest",
+    "yalc:push": "yarn build && yalc publish --push",
+    "quality": "yarn lint && tsc --noEmit"
+  },
+  "author": "Calin Tamas <calintamas2@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-hooks": "^8.0.0",
+    "@testing-library/react-native": "^9.0.0",
+    "@types/jest": "^28.1.0",
+    "@types/react-native": "^0.67.3",
+    "eslint-config-backpacker-react-ts": "^0.3.0",
+    "husky": "^8.0.1",
+    "import-sort-style-module": "^6.0.0",
+    "jest": "^28.1.0",
+    "lint-staged": "^13.0.0",
+    "metro-react-native-babel-preset": "^0.71.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.4.3",
+    "yalc": "^1.0.0-pre.53"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module",
+      "parser": "typescript"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md}": "yarn prettier",
+    "*.{js,jsx,ts,tsx}": "yarn lint"
+  }
+}

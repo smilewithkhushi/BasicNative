@@ -1,0 +1,1 @@
+{"version":3,"names":["Animated"],"sources":["index.ts"],"sourcesContent":["'use strict';\nimport * as Animated from './Animated';\n\nexport * from './reanimated2';\nexport default Animated;\n"],"mappings":"AAAA,YAAY;;AACZ,OAAO,KAAKA,QAAQ,MAAM,YAAY;AAEtC,cAAc,eAAe;AAC7B,eAAeA,QAAQ","ignoreList":[]}

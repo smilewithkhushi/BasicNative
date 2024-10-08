@@ -38,6 +38,11 @@ import Dashboard from "./src/screens/ExpenseTracker/Dasboard";
 import CodingQuiz from "./src/screens/CodingQuiz/CodingQuiz";
 import TimerHome from "./src/screens/Timer/TimerHome";
 import MusicPlayer from "./src/screens/MusicPlayer/musicplayer";
+import MyChatApp from "./src/screens/MyChatApp/MyChatApp";
+import SeatingChart from "./src/screens/SeatingChart/SeatingChart";
+import WeatherApp from "./src/screens/Weather App/WeatherApp";
+import VideoCallingApp from "./src/screens/Video Calling App/VideoCallingApp";
+import SosApp from "./src/screens/SOSAlertApp/SosApp";
 import Octicons from 'react-native-vector-icons/Octicons'
 
 export default function App() {
@@ -70,28 +75,32 @@ export default function App() {
           <Stack.Screen
             name="Image Gallery"
             component={Gallery}
-            options={{ headerShown: true, animation: "slide_from_right" ,
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#FAE7CA'
               },
-              headerBackVisible:true,
-              
+              headerBackVisible: true,
+
             }}
           />
           <Stack.Screen
             name="Rock Paper Scissors Game"
             component={RPSGame}
-            options={{ headerShown: true, animation: "slide_from_right" ,
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#FAD8F8'
-              }, }}
+              },
+            }}
           />
           <Stack.Screen
             name="Book Finder"
             component={BookFinder}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#FFE4E1'
@@ -101,7 +110,8 @@ export default function App() {
           <Stack.Screen
             name="Calculator"
             component={Calculator}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#E8EBE7'
@@ -112,7 +122,8 @@ export default function App() {
           <Stack.Screen
             name="Movie Finder"
             component={MovieFinder}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#F9D3EB'
@@ -128,7 +139,8 @@ export default function App() {
           <Stack.Screen
             name="To Do List"
             component={ToDoList}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#BAF0F9'
@@ -139,7 +151,8 @@ export default function App() {
           <Stack.Screen
             name="Add Task"
             component={AddTaskScreen}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#BAF0F9'
@@ -150,7 +163,8 @@ export default function App() {
           <Stack.Screen
             name="Dashboard"
             component={Dashboard}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#ABD6CC'
@@ -161,7 +175,8 @@ export default function App() {
           <Stack.Screen
             name="Add Expense"
             component={AddExpense}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#ABD6CC'
@@ -172,7 +187,8 @@ export default function App() {
           <Stack.Screen
             name="QR Scanner"
             component={QRScanner}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#A7D1F7'
@@ -183,7 +199,8 @@ export default function App() {
           <Stack.Screen
             name="QR Generator"
             component={QRCodeGenerator}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#A7D1F7'
@@ -198,7 +215,8 @@ export default function App() {
           <Stack.Screen
             name="Tic Tac Toe"
             component={TicTacToe}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#F89393'
@@ -208,7 +226,8 @@ export default function App() {
           <Stack.Screen
             name="Workout Overview"
             component={WorkoutOverview}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#D0FAF8'
@@ -221,10 +240,11 @@ export default function App() {
             options={{ headerShown: false, animation: "slide_from_right" }}
           />
 
-<Stack.Screen
+          <Stack.Screen
             name="Music Player"
             component={MusicPlayer}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#E8EBE9'
@@ -235,7 +255,8 @@ export default function App() {
           <Stack.Screen
             name="Add Workout"
             component={AddWorkout}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#D0FAF8'
@@ -300,10 +321,66 @@ export default function App() {
           <Stack.Screen
             name="Coding Quiz"
             component={CodingQuiz}
-            options={{ headerShown: true, animation: "slide_from_right", 
+            options={{
+              headerShown: true, animation: "slide_from_right",
               headerTitleAlign: 'center',
               headerStyle: {
                 backgroundColor: '#BBFCCB'
+              },
+            }}
+          />
+          <Stack.Screen
+            name="My Chat App"
+            component={MyChatApp}
+            options={{
+              headerShown: true, animation: "slide_from_right",
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FFE4E1'
+              },
+            }}
+          />
+          <Stack.Screen
+            name="SOS App"
+            component={SosApp}
+            options={{
+              headerShown: true, animation: "slide_from_right",
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FFE4E1'
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Weather App"
+            component={WeatherApp}
+            options={{
+              headerShown: true, animation: "slide_from_right",
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FFE4E1'
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Seating Chart"
+            component={SeatingChart}
+            options={{
+              headerShown: true, animation: "slide_from_right",
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FFE4E1'
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Video Calling App"
+            component={VideoCallingApp}
+            options={{
+              headerShown: true, animation: "slide_from_right",
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FFE4E1'
               },
             }}
           />

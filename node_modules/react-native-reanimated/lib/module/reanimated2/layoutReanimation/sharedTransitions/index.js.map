@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["index.ts"],"sourcesContent":["'use strict';\nexport * from './SharedTransition';\nexport * from './ProgressTransitionManager';\n"],"mappings":"AAAA,YAAY;;AACZ,cAAc,oBAAoB;AAClC,cAAc,6BAA6B","ignoreList":[]}

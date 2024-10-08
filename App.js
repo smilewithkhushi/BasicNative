@@ -32,6 +32,8 @@ import Icons from "./src/screens/TicTacToe/components/Icons";
 import AnimeFinder from "./src/screens/AnimeFinder/AnimeFinder";
 import Pokedex from "./src/screens/Pokedex/Pokedex";
 import AddWorkout from "./src/screens/FitnessTracker/AddWorkout";
+import HabitTracker from "./src/screens/HabitTracker/HabitTracker";
+import AddHabitScreen from "./src/screens/HabitTracker/AddHabitScreen";
 import WorkoutOverview from "./src/screens/FitnessTracker/WorkoutOverview";
 import AddExpense from "./src/screens/ExpenseTracker/AddExpense";
 import Dashboard from "./src/screens/ExpenseTracker/Dasboard";
@@ -83,6 +85,30 @@ export default function App() {
               },
               headerBackVisible: true,
 
+            }}
+          />
+          <Stack.Screen
+            name="Habit Tracker"
+            component={HabitTracker}
+            options={{
+              headerShown: true,
+              animation: "slide_from_right",
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FAE7CA',
+              },
+            }}
+          />
+          <Stack.Screen
+            name="Add Habit"
+            component={AddHabitScreen}
+            options={{
+              headerShown: true,
+              title: 'Add New Habit',
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: '#FAE7CA',
+              },
             }}
           />
           <Stack.Screen

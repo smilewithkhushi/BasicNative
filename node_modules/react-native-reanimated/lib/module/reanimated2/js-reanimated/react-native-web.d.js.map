@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["react-native-web.d.ts"],"sourcesContent":["'use strict';\ndeclare module 'react-native-web/dist/exports/StyleSheet/compiler/createReactDOMStyle';\ndeclare module 'react-native-web/dist/exports/StyleSheet/preprocess';\n"],"mappings":"AAAA,YAAY","ignoreList":[]}

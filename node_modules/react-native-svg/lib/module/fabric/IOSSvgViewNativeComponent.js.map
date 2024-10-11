@@ -1,0 +1,1 @@
+{"version":3,"names":["codegenNativeComponent","excludedPlatforms"],"sourceRoot":"../../../src","sources":["fabric/IOSSvgViewNativeComponent.ts"],"mappings":"AAAA,OAAOA,sBAAsB,MAAM,yDAAyD;AAsB5F,eAAeA,sBAAsB,CAAc,cAAc,EAAE;EACjEC,iBAAiB,EAAE,CAAC,SAAS;AAC/B,CAAC,CAAC"}

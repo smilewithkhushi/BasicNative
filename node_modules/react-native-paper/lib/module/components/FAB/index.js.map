@@ -1,0 +1,1 @@
+{"version":3,"names":["FABComponent","FABGroup","FAB","Object","assign","Group"],"sourceRoot":"../../../../src","sources":["components/FAB/index.ts"],"mappings":"AAAA,OAAOA,YAAY,MAAM,OAAO;AAChC,OAAOC,QAAQ,MAAM,YAAY;AAEjC,MAAMC,GAAG,GAAGC,MAAM,CAACC,MAAM;AACvB;AACAJ,YAAY,EACZ;EACE;EACAK,KAAK,EAAEJ;AACT,CACF,CAAC;AAED,eAAeC,GAAG"}

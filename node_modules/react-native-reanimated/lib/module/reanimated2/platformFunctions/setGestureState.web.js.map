@@ -1,0 +1,1 @@
+{"version":3,"names":["setGestureState","console","warn"],"sources":["setGestureState.web.ts"],"sourcesContent":["'use strict';\n\nexport function setGestureState() {\n  console.warn('[Reanimated] setGestureState() is not available on web.');\n}\n"],"mappings":"AAAA,YAAY;;AAEZ,OAAO,SAASA,eAAeA,CAAA,EAAG;EAChCC,OAAO,CAACC,IAAI,CAAC,yDAAyD,CAAC;AACzE","ignoreList":[]}

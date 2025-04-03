@@ -1,1 +1,0 @@
-{"version":3,"names":["codegenNativeComponent","excludedPlatforms"],"sourceRoot":"../../../src","sources":["fabric/AndroidSvgViewNativeComponent.ts"],"mappings":"AAAA,OAAOA,sBAAsB,MAAM,yDAAyD;AA6E5F,eAAeA,sBAAsB,CAAc,qBAAqB,EAAE;EACxEC,iBAAiB,EAAE,CAAC,KAAK;AAC3B,CAAC,CAAC"}

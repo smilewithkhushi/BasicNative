@@ -1,1 +1,0 @@
-{"version":3,"names":["roundLayoutSize","size","Math","round"],"sourceRoot":"../../../src","sources":["utils/roundLayoutSize.ts"],"mappings":"AAAA,OAAO,MAAMA,eAAe,GAAIC,IAAY,IAC1CC,IAAI,CAACC,KAAK,CAACF,IAAI,GAAG,IAAI,CAAC,GAAG,IAAI"}
